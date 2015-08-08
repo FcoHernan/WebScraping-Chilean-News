@@ -3,6 +3,8 @@
 import urllib
 import MySQLdb
 import pprint
+import js2py
+
 
 DB_HOST = 'localhost' 
 DB_USER = 'root' 
@@ -31,9 +33,24 @@ pprint.pprint(result[0][2])
 try:
 	htmlfile = urllib.urlopen(result[0][2])
 	htmltext = htmlfile.read()
-	print htmltext;
+	#print htmltext
 except Exception, e:
 	print "aaaaaaaaa" 
 
 
 
+js = """
+function escramble_758(){
+var a,b,c
+a='+1 '
+b='84-'
+a+='425-'
+b+='7450'
+c='9'
+document.write(a+c+b)
+}
+escramble_758()
+""".replace("document.write", "return ")
+
+result = js2py.eval_js(js).to_python()  # executing JavaScript and converting the result to python string 
+print result
