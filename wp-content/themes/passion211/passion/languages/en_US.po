@@ -1,0 +1,3143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Passion v2.0.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-14 11:40+0700\n"
+"PO-Revision-Date: 2015-05-20 09:35:05+0000\n"
+"Last-Translator: kopasoft <kopasoft@gmail.com>\n"
+"Language-Team: KOPASOFT <kopasoft@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Textdomain-Support: yes"
+
+#: comments.php:3
+#@ passion
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: comments.php:14
+#@ passion
+msgid "No Comments"
+msgstr ""
+
+#: comments.php:14
+#: layouts/blog-page.php:65
+#: layouts/single-post.php:42
+#: library/widgets/list-alpha.php:96
+#: library/widgets/list-alpha.php:150
+#: library/widgets/list-alpha.php:193
+#: library/widgets/list-alpha.php:264
+#: library/widgets/list-alpha.php:306
+#: library/widgets/list-alpha.php:382
+#: library/widgets/list-alpha.php:442
+#: library/widgets/list-alpha.php:472
+#: library/widgets/list-beta.php:49
+#: library/widgets/media-center.php:203
+#: library/widgets/slider-flex.php:116
+#: library/widgets/slider-flex.php:254
+#@ passion
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:14
+#: layouts/blog-page.php:65
+#: layouts/single-post.php:42
+#: library/widgets/list-alpha.php:96
+#: library/widgets/list-alpha.php:150
+#: library/widgets/list-alpha.php:193
+#: library/widgets/list-alpha.php:264
+#: library/widgets/list-alpha.php:306
+#: library/widgets/list-alpha.php:382
+#: library/widgets/list-alpha.php:442
+#: library/widgets/list-alpha.php:472
+#: library/widgets/list-beta.php:49
+#: library/widgets/media-center.php:203
+#: library/widgets/slider-flex.php:116
+#: library/widgets/slider-flex.php:254
+#@ passion
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:32
+#: pagination.php:19
+#@ passion
+msgid "Previous"
+msgstr ""
+
+#: comments.php:33
+#: pagination.php:20
+#@ passion
+msgid "Next"
+msgstr ""
+
+#: comments.php:40
+#@ passion
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:70
+#: library/shortcodes/contact-form.php:73
+#@ passion
+msgid "Name (<span>required</span>)"
+msgstr ""
+
+#: comments.php:75
+#: library/shortcodes/contact-form.php:79
+#@ passion
+msgid "Email (<span>required</span>)"
+msgstr ""
+
+#: comments.php:80
+#: library/shortcodes/contact-form.php:85
+#@ passion
+msgid "Website"
+msgstr ""
+
+#: comments.php:90
+#, php-format
+#@ passion
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:91
+#, php-format
+#@ passion
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:92
+#@ passion
+msgid "Your email address will not be published. Required fields are marked (<span>required</span>)"
+msgstr ""
+
+#: comments.php:96
+#@ passion
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:97
+#, php-format
+#@ passion
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:98
+#@ passion
+msgid "Cancel"
+msgstr ""
+
+#: comments.php:99
+#@ passion
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:105
+#@ passion
+msgid "Your comments (<span>required</span>)"
+msgstr ""
+
+#: comments.php:185
+#: library/classes/posttype.class.php:279
+#: library/classes/posttype.class.php:365
+#@ passion
+msgid "Edit"
+msgstr ""
+
+#: header.php:72
+#@ passion
+msgid "Menu"
+msgstr ""
+
+#: searchform.php:4
+#@ passion
+msgid "Enter your keyword"
+msgstr ""
+
+#: layouts/blog-page.php:65
+#: layouts/single-post.php:42
+#: library/widgets/list-alpha.php:96
+#: library/widgets/list-alpha.php:150
+#: library/widgets/list-alpha.php:193
+#: library/widgets/list-alpha.php:264
+#: library/widgets/list-alpha.php:306
+#: library/widgets/list-alpha.php:382
+#: library/widgets/list-alpha.php:442
+#: library/widgets/list-alpha.php:472
+#: library/widgets/list-beta.php:49
+#: library/widgets/media-center.php:203
+#: library/widgets/slider-flex.php:116
+#: library/widgets/slider-flex.php:254
+#@ passion
+msgid "No Comment"
+msgstr ""
+
+#: layouts/blog-page.php:65
+#: layouts/single-post.php:42
+#: library/classes/util.class.php:459
+#: library/widgets/list-alpha.php:96
+#: library/widgets/list-alpha.php:150
+#: library/widgets/list-alpha.php:193
+#: library/widgets/list-alpha.php:264
+#: library/widgets/list-alpha.php:306
+#: library/widgets/list-alpha.php:382
+#: library/widgets/list-alpha.php:442
+#: library/widgets/list-alpha.php:472
+#: library/widgets/list-beta.php:49
+#: library/widgets/media-center.php:203
+#: library/widgets/slider-flex.php:116
+#: library/widgets/slider-flex.php:254
+#@ passion
+msgid "Comment Off"
+msgstr ""
+
+#: layouts/blog-page.php:154
+#: library/widgets/list-alpha.php:117
+#: library/widgets/list-alpha.php:172
+#: library/widgets/list-alpha.php:215
+#: library/widgets/list-alpha.php:285
+#: library/widgets/list-alpha.php:403
+#: library/widgets/list-alpha.php:493
+#: library/widgets/list-beta.php:83
+#: library/widgets/media-center.php:223
+#: library/widgets/quick-views.php:114
+#: library/widgets/slider-flex.php:136
+#: library/widgets/slider-flex.php:274
+#@ passion
+msgid "Read more ..."
+msgstr ""
+
+#: layouts/blog-page.php:167
+#: layouts/single-post.php:133
+#: layouts/static-page.php:32
+#@ passion
+msgid "Nothing Found..."
+msgstr ""
+
+#: layouts/error-404.php:13
+#@ passion
+msgid "404"
+msgstr ""
+
+#: layouts/error-404.php:16
+#@ passion
+msgid "Page not found..."
+msgstr ""
+
+#: layouts/error-404.php:17
+#@ passion
+msgid "We're sorry, but we can't find the page you were looking for. It's probably some thing we've done wrong but now we know about it we'll try to fix it. In the meantime, try one of this options:"
+msgstr ""
+
+#: layouts/error-404.php:19
+#@ passion
+msgid "Go back to previous page"
+msgstr ""
+
+#: layouts/error-404.php:20
+#@ passion
+msgid "Go to homepage"
+msgstr ""
+
+#: layouts/single-post.php:73
+#: layouts/static-page.php:19
+#@ passion
+msgid "Parts"
+msgstr ""
+
+#: layouts/single-post.php:84
+#@ passion
+msgid "In : "
+msgstr ""
+
+#: layouts/single-post.php:108
+#@ passion
+msgid "Previous article"
+msgstr ""
+
+#: layouts/single-post.php:115
+#@ passion
+msgid "Next article"
+msgstr ""
+
+#: library/ajax.php:24
+#: library/ajax.php:32
+#: library/ajax.php:72
+#@ passion
+msgid "This sidebar is existing. Please enter other name."
+msgstr ""
+
+#: library/ajax.php:82
+#, php-format
+#@ passion
+msgid "This sidebar is using for Template: %s - Layout: %s."
+msgstr ""
+
+#: library/ajax.php:281
+#@ passion
+msgid "Contact Form:"
+msgstr ""
+
+#: library/ajax.php:289
+#@ passion
+msgid "Oops! errors occured. Please try again ..."
+msgstr ""
+
+#: library/ajax.php:291
+#@ passion
+msgid "Success! Your email address has been sent."
+msgstr ""
+
+#: library/ajax.php:404
+#@ passion
+msgid "Content load found"
+msgstr ""
+
+#: library/backend.php:56
+#@ passion
+msgid "Facebook URL"
+msgstr ""
+
+#: library/backend.php:57
+#@ passion
+msgid "Twitter URL"
+msgstr ""
+
+#: library/backend.php:58
+#@ passion
+msgid "Dribbble URL"
+msgstr ""
+
+#: library/backend.php:59
+#@ passion
+msgid "Pinterest URL"
+msgstr ""
+
+#: library/backend.php:60
+#@ passion
+msgid "Flickr URL"
+msgstr ""
+
+#: library/backend.php:61
+#@ passion
+msgid "Google Profile URL"
+msgstr ""
+
+#: library/backend.php:114
+#@ passion
+msgid "Shortcodes"
+msgstr ""
+
+#: library/backend.php:115
+#@ passion
+msgid "Grid"
+msgstr ""
+
+#: library/backend.php:116
+#@ passion
+msgid "Container"
+msgstr ""
+
+#: library/backend.php:117
+#@ passion
+msgid "Accordion"
+msgstr ""
+
+#: library/backend.php:118
+#@ passion
+msgid "Toggle"
+msgstr ""
+
+#: library/backend.php:119
+#@ passion
+msgid "Video"
+msgstr ""
+
+#: library/backend.php:120
+#: library/ini.php:401
+#@ passion
+msgid "Youtube"
+msgstr ""
+
+#: library/backend.php:121
+#@ passion
+msgid "Vimeo"
+msgstr ""
+
+#: library/backend.php:122
+#@ passion
+msgid "Mp4"
+msgstr ""
+
+#: library/backend.php:123
+#@ passion
+msgid "Dropcap"
+msgstr ""
+
+#: library/backend.php:124
+#: library/backend.php:126
+#@ passion
+msgid "Square"
+msgstr ""
+
+#: library/backend.php:125
+#@ passion
+msgid "Circle"
+msgstr ""
+
+#: library/backend.php:127
+#@ passion
+msgid "Caption"
+msgstr ""
+
+#: library/backend.php:128
+#@ passion
+msgid "Button"
+msgstr ""
+
+#: library/backend.php:129
+#@ passion
+msgid "Share this post"
+msgstr ""
+
+#: library/backend.php:130
+#@ passion
+msgid "Contact form"
+msgstr ""
+
+#: library/backend.php:132
+#@ passion
+msgid "Please enter sidebar name!"
+msgstr ""
+
+#: library/backend.php:133
+#@ passion
+msgid "Do you want to remove this sidebar?"
+msgstr ""
+
+#: library/backend.php:136
+#@ passion
+msgid "Do you want to reset all setting to default?"
+msgstr ""
+
+#: library/backend.php:139
+#@ passion
+msgid "Media Center"
+msgstr ""
+
+#: library/backend.php:140
+#@ passion
+msgid "Choose Image"
+msgstr ""
+
+#: library/backend.php:270
+#: library/backend.php:275
+#: library/cpanel/theme-options.php:50
+#@ passion
+msgid "Theme Options"
+msgstr ""
+
+#: library/backend.php:280
+#: library/cpanel/sidebar-manager.php:59
+#@ passion
+msgid "Sidebar Manage"
+msgstr ""
+
+#: library/backend.php:280
+#@ passion
+msgid "Sidebar Manager"
+msgstr ""
+
+#: library/backend.php:285
+#@ passion
+msgid "Layout Manage"
+msgstr ""
+
+#: library/backend.php:285
+#@ passion
+msgid "Layout Manager"
+msgstr ""
+
+#: library/frontend.php:21
+#@ passion
+msgid "Top Menu"
+msgstr ""
+
+#: library/frontend.php:22
+#@ passion
+msgid "Primary Menu"
+msgstr ""
+
+#: library/frontend.php:23
+#@ passion
+msgid "Seconday Menu"
+msgstr ""
+
+#: library/frontend.php:24
+#@ passion
+msgid "Bottom Menu"
+msgstr ""
+
+#: library/classes/layout.class.php:191
+#: library/frontend.php:161
+#: library/ini.php:132
+#@ passion
+msgid "Home"
+msgstr ""
+
+#: library/classes/posttype.class.php:282
+#: library/frontend.php:500
+#@ passion
+msgid "View"
+msgstr ""
+
+#: library/frontend.php:501
+#@ passion
+msgid "Views"
+msgstr ""
+
+#: library/frontend.php:504
+#@ passion
+msgid "Checking"
+msgstr ""
+
+#: library/frontend.php:505
+#@ passion
+msgid "Submit"
+msgstr ""
+
+#: library/frontend.php:506
+#@ passion
+msgid "Sending..."
+msgstr ""
+
+#: library/frontend.php:509
+#@ passion
+msgid "Your captcha is incorrect. Please try again"
+msgstr ""
+
+#: library/frontend.php:510
+#@ passion
+msgid "Captcha is required"
+msgstr ""
+
+#: library/frontend.php:513
+#@ passion
+msgid "Please enter your name"
+msgstr ""
+
+#: library/frontend.php:514
+#: library/frontend.php:526
+#@ passion
+msgid "At least {0} characters required"
+msgstr ""
+
+#: library/frontend.php:517
+#@ passion
+msgid "Please enter your email"
+msgstr ""
+
+#: library/frontend.php:518
+#@ passion
+msgid "Please enter a valid email"
+msgstr ""
+
+#: library/frontend.php:521
+#@ passion
+msgid "Please enter your url"
+msgstr ""
+
+#: library/frontend.php:522
+#@ passion
+msgid "Please enter a valid url"
+msgstr ""
+
+#: library/frontend.php:525
+#@ passion
+msgid "Please enter a message"
+msgstr ""
+
+#: library/frontend.php:672
+#@ passion
+msgid "Related Articles"
+msgstr ""
+
+#: library/frontend.php:724
+#: library/shortcodes/share-this-post.php:24
+#@ passion
+msgid "I recommend this page: "
+msgstr ""
+
+#: library/frontend.php:724
+#: library/shortcodes/share-this-post.php:24
+#@ passion
+msgid ". You can read it on: "
+msgstr ""
+
+#: library/frontend.php:733
+#@ passion
+msgid "Share This Story, Choose Your Platform!"
+msgstr ""
+
+#: library/frontend.php:786
+#@ passion
+msgid "About the author"
+msgstr ""
+
+#: library/frontend.php:793
+#@ passion
+msgid "Website:"
+msgstr ""
+
+#: library/frontend.php:797
+#@ passion
+msgid "Social links:"
+msgstr ""
+
+#: library/ini.php:15
+#@ passion
+msgid "Widget Area 1"
+msgstr ""
+
+#: library/ini.php:16
+#@ passion
+msgid "Widget Area 2"
+msgstr ""
+
+#: library/ini.php:17
+#@ passion
+msgid "Widget Area 3"
+msgstr ""
+
+#: library/ini.php:18
+#@ passion
+msgid "Widget Area 4"
+msgstr ""
+
+#: library/ini.php:19
+#@ passion
+msgid "Widget Area 5"
+msgstr ""
+
+#: library/ini.php:20
+#@ passion
+msgid "Widget Area 6"
+msgstr ""
+
+#: library/ini.php:21
+#@ passion
+msgid "Widget Area 7"
+msgstr ""
+
+#: library/ini.php:22
+#@ passion
+msgid "Widget Area 8"
+msgstr ""
+
+#: library/ini.php:23
+#@ passion
+msgid "Widget Area 9"
+msgstr ""
+
+#: library/ini.php:24
+#@ passion
+msgid "Widget Area 10"
+msgstr ""
+
+#: library/ini.php:25
+#@ passion
+msgid "Widget Area 11"
+msgstr ""
+
+#: library/ini.php:39
+#: library/ini.php:140
+#@ passion
+msgid "Front Page"
+msgstr ""
+
+#: library/ini.php:57
+#@ passion
+msgid "Blog Page"
+msgstr ""
+
+#: library/ini.php:74
+#: library/ini.php:149
+#: library/ini.php:268
+#@ passion
+msgid "Single Post"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:113
+#: library/ini.php:90
+#: library/ini.php:157
+#@ passion
+msgid "Static Page"
+msgstr ""
+
+#: library/ini.php:106
+#@ passion
+msgid "Error 404"
+msgstr ""
+
+#: library/ini.php:166
+#@ passion
+msgid "Archive"
+msgstr ""
+
+#: library/ini.php:174
+#@ passion
+msgid "Category | Tag"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:109
+#: library/ini.php:182
+#@ passion
+msgid "Author"
+msgstr ""
+
+#: library/ini.php:190
+#@ passion
+msgid "Search Result"
+msgstr ""
+
+#: library/ini.php:198
+#@ passion
+msgid "404 Page not found"
+msgstr ""
+
+#: library/ini.php:216
+#@ passion
+msgid "-- None --"
+msgstr ""
+
+#: library/ini.php:217
+#@ passion
+msgid "Sidebar 1"
+msgstr ""
+
+#: library/ini.php:218
+#@ passion
+msgid "Sidebar 2"
+msgstr ""
+
+#: library/ini.php:219
+#@ passion
+msgid "Sidebar 3"
+msgstr ""
+
+#: library/ini.php:220
+#@ passion
+msgid "Sidebar 4"
+msgstr ""
+
+#: library/ini.php:221
+#@ passion
+msgid "Sidebar 5"
+msgstr ""
+
+#: library/ini.php:222
+#@ passion
+msgid "Sidebar 6"
+msgstr ""
+
+#: library/ini.php:223
+#@ passion
+msgid "Sidebar 7"
+msgstr ""
+
+#: library/ini.php:224
+#@ passion
+msgid "Sidebar 8"
+msgstr ""
+
+#: library/ini.php:225
+#@ passion
+msgid "Sidebar 9"
+msgstr ""
+
+#: library/ini.php:226
+#@ passion
+msgid "Sidebar 10"
+msgstr ""
+
+#: library/ini.php:227
+#@ passion
+msgid "Sidebar 11"
+msgstr ""
+
+#: library/ini.php:258
+#@ passion
+msgid "General Setting"
+msgstr ""
+
+#: library/ini.php:263
+#@ passion
+msgid "Blog Posts"
+msgstr ""
+
+#: library/ini.php:273
+#@ passion
+msgid "Contact"
+msgstr ""
+
+#: library/cpanel/theme-options/social-links.php:13
+#: library/ini.php:278
+#@ passion
+msgid "Social Links"
+msgstr ""
+
+#: library/ini.php:283
+#@ passion
+msgid "Typography"
+msgstr ""
+
+#: library/ini.php:288
+#@ passion
+msgid "Color Scheme"
+msgstr ""
+
+#: library/cpanel/theme-options/custom-css.php:13
+#: library/ini.php:293
+#@ passion
+msgid "Custom CSS"
+msgstr ""
+
+#: library/ini.php:298
+#@ passion
+msgid "Extra"
+msgstr ""
+
+#: library/ini.php:303
+#@ passion
+msgid "SEO"
+msgstr ""
+
+#: library/ini.php:321
+#: library/shortcodes/share-this-post.php:37
+#@ passion
+msgid "Facebook"
+msgstr ""
+
+#: library/ini.php:346
+#: library/shortcodes/share-this-post.php:36
+#@ passion
+msgid "Twitter"
+msgstr ""
+
+#: library/ini.php:341
+#@ passion
+msgid "Google plus"
+msgstr ""
+
+#: library/ini.php:336
+#@ passion
+msgid "Pinterest"
+msgstr ""
+
+#: library/ini.php:331
+#@ passion
+msgid "Linkedin"
+msgstr ""
+
+#: library/ini.php:361
+#@ passion
+msgid "Foursquare"
+msgstr ""
+
+#: library/ini.php:326
+#@ passion
+msgid "Dribbble"
+msgstr ""
+
+#: library/ini.php:386
+#@ passion
+msgid "Tumblr"
+msgstr ""
+
+#: library/ini.php:356
+#@ passion
+msgid "Flickr"
+msgstr ""
+
+#: library/ini.php:351
+#@ passion
+msgid "Dropbox"
+msgstr ""
+
+#: library/ini.php:366
+#@ passion
+msgid "Github"
+msgstr ""
+
+#: library/ini.php:396
+#@ passion
+msgid "Xing"
+msgstr ""
+
+#: library/ini.php:371
+#@ passion
+msgid "Instagram"
+msgstr ""
+
+#: library/ini.php:376
+#@ passion
+msgid "Renren"
+msgstr ""
+
+#: library/ini.php:406
+#@ passion
+msgid "Skype"
+msgstr ""
+
+#: library/ini.php:409
+#@ passion
+msgid "Enter value with format <code>skype:your_name?call</code>"
+msgstr ""
+
+#: library/ini.php:412
+#@ passion
+msgid "RSS"
+msgstr ""
+
+#: library/ini.php:415
+#@ passion
+msgid "Display the RSS feed button with the default RSS feed or enter a custom feed above. <br/>Enter <code>HIDE</code> if you want to hide it"
+msgstr ""
+
+#: library/ini.php:431
+#@ passion
+msgid "52 x 52 (pixel)"
+msgstr ""
+
+#: library/ini.php:435
+#@ passion
+msgid "This size using for Widget small list, Widget quick views"
+msgstr ""
+
+#: library/ini.php:439
+#@ passion
+msgid "230 x 140 (pixel)"
+msgstr ""
+
+#: library/ini.php:443
+#@ passion
+msgid "This size using for blog posts and mobile device"
+msgstr ""
+
+#: library/ini.php:447
+#@ passion
+msgid "445 x 270 (pixel)"
+msgstr ""
+
+#: library/ini.php:451
+#@ passion
+msgid "This size using for the most of widgets"
+msgstr ""
+
+#: library/ini.php:455
+#@ passion
+msgid "335 x 470 (pixel)"
+msgstr ""
+
+#: library/ini.php:459
+#: library/ini.php:467
+#@ passion
+msgid "This size using for Widget Flex Slider (Small)"
+msgstr ""
+
+#: library/ini.php:463
+#@ passion
+msgid "705 x 430 (pixel)"
+msgstr ""
+
+#: library/ini.php:471
+#@ passion
+msgid "890 x 545 (pixel)"
+msgstr ""
+
+#: library/ini.php:475
+#@ passion
+msgid "This size using for Widget Flex Slider (Medium)"
+msgstr ""
+
+#: library/ini.php:479
+#@ passion
+msgid "1225 x 750 (pixel)"
+msgstr ""
+
+#: library/ini.php:483
+#@ passion
+msgid "This size using for Widget Flex Slider (Large)"
+msgstr ""
+
+#: library/classes/BFI_Thumb.php:145
+#@ default
+msgid "The server does not have ImageMagick or GD installed and/or enabled! Any of these libraries are required for WordPress to be able to resize images. Please contact your server administrator to enable this before continuing."
+msgstr ""
+
+#: library/classes/BFI_Thumb.php:273
+#@ default
+msgid "Image rotate failed."
+msgstr ""
+
+#: library/classes/BFI_Thumb.php:296
+#@ default
+msgid "Image opacity change failed."
+msgstr ""
+
+#: library/classes/BFI_Thumb.php:383
+#@ default
+msgid "Image color change failed."
+msgstr ""
+
+#: library/classes/BFI_Thumb.php:400
+#@ default
+msgid "Image grayscale failed."
+msgstr ""
+
+#: library/classes/BFI_Thumb.php:417
+#@ default
+msgid "Image negate failed."
+msgstr ""
+
+#: library/classes/layout.class.php:94
+#@ passion
+msgid "Select the layout"
+msgstr ""
+
+#: library/classes/layout.class.php:188
+#@ passion
+msgid "You are here: "
+msgstr ""
+
+#: library/classes/layout.class.php:238
+#, php-format
+#@ passion
+msgid "Posts created by %1$s"
+msgstr ""
+
+#: library/classes/layout.class.php:243
+#, php-format
+#@ passion
+msgid "Searched for \"%s\" return %s results"
+msgstr ""
+
+#: library/classes/layout.class.php:270
+#: library/cpanel/theme-options/seo.php:161
+#@ passion
+msgid "Page not found"
+msgstr ""
+
+#: library/classes/layout.class.php:273
+#@ passion
+msgid "Latest News"
+msgstr ""
+
+#: library/classes/posttype.class.php:277
+#: library/classes/posttype.class.php:278
+#: library/classes/posttype.class.php:367
+#@ passion
+msgid "Add New"
+msgstr ""
+
+#: library/classes/posttype.class.php:280
+#: library/classes/posttype.class.php:368
+#@ passion
+msgid "New"
+msgstr ""
+
+#: library/classes/posttype.class.php:281
+#: library/classes/posttype.class.php:362
+#@ passion
+msgid "All"
+msgstr ""
+
+#: library/classes/posttype.class.php:283
+#: library/classes/posttype.class.php:361
+#@ passion
+msgid "Search"
+msgstr ""
+
+#: library/classes/posttype.class.php:284
+#: library/classes/posttype.class.php:285
+#: library/cpanel/theme-options/blog-posts.php:114
+#: library/cpanel/theme-options/extra.php:55
+#: library/cpanel/theme-options/extra.php:197
+#: library/cpanel/theme-options/general.php:180
+#: library/cpanel/theme-options/general.php:268
+#: library/cpanel/theme-options/single-post.php:165
+#: library/metaboxes/post.php:167
+#: library/shortcodes/visual/button.php:23
+#@ passion
+msgid "No"
+msgstr ""
+
+#: library/classes/posttype.class.php:284
+#@ passion
+msgid "found"
+msgstr ""
+
+#: library/classes/posttype.class.php:285
+#@ passion
+msgid "found in Trash"
+msgstr ""
+
+#: library/classes/posttype.class.php:363
+#: library/classes/posttype.class.php:364
+#@ passion
+msgid "Parent"
+msgstr ""
+
+#: library/classes/posttype.class.php:366
+#@ passion
+msgid "Update"
+msgstr ""
+
+#: library/classes/posttype.class.php:368
+#@ passion
+msgid "Name"
+msgstr ""
+
+#: library/classes/seo.class.php:54
+#: library/shortcodes/system/pagination_paged.php:20
+#, php-format
+#@ passion
+msgid "Page %s"
+msgstr ""
+
+#: library/classes/ui.class.php:110
+#@ passion
+msgid "<blockquote class=\"kopa-ui-alert\">This is abstract class</blockquote>"
+msgstr ""
+
+#: library/classes/util.class.php:58
+#, php-format
+#@ passion
+msgid "View all posts in %s"
+msgstr ""
+
+#: library/classes/util.class.php:403
+#, php-format
+#@ passion
+msgid "%1$s View"
+msgstr ""
+
+#: library/classes/util.class.php:405
+#, php-format
+#@ passion
+msgid "%1$s Views"
+msgstr ""
+
+#: library/classes/util.class.php:449
+#@ passion
+msgid "Comment Now"
+msgstr ""
+
+#: library/classes/util.class.php:452
+#@ passion
+msgid "Comment"
+msgstr ""
+
+#: library/classes/util.class.php:455
+#: library/shortcodes/share-this-post.php:41
+#@ passion
+msgid "Comments"
+msgstr ""
+
+#: library/classes/ui/complex/font.ui.class.php:32
+#@ passion
+msgid "-- None (turn off this feature) --"
+msgstr ""
+
+#: library/classes/ui/complex/font.ui.class.php:163
+#@ passion
+msgid "--None--"
+msgstr ""
+
+#: library/classes/ui/complex/font.ui.class.php:164
+#@ passion
+msgid "Capitalize"
+msgstr ""
+
+#: library/classes/ui/complex/font.ui.class.php:165
+#@ passion
+msgid "Lower Case"
+msgstr ""
+
+#: library/classes/ui/complex/font.ui.class.php:166
+#@ passion
+msgid "Upper Case"
+msgstr ""
+
+#: library/classes/ui/complex/font.ui.class.php:172
+#@ passion
+msgid "Grumpy wizards make toxic brew for the evil Queen and Jack"
+msgstr ""
+
+#: library/classes/ui/complex/layout.ui.class.php:40
+#@ passion
+msgid "Parameter template_hierarchy is missing."
+msgstr ""
+
+#: library/classes/ui/complex/sidebar.manager.ui.class.php:21
+#@ passion
+msgid "Add your sidebars below and then you can assign one of these sidebars from the individual posts, pages or archive, .."
+msgstr ""
+
+#: library/classes/ui/complex/sidebar.manager.ui.class.php:25
+#@ passion
+msgid "Add sidebar"
+msgstr ""
+
+#: library/classes/ui/complex/sidebar.manager.ui.class.php:31
+#@ passion
+msgid "Sidebar name"
+msgstr ""
+
+#: library/classes/ui/complex/sidebar.manager.ui.class.php:32
+#@ passion
+msgid "Rename"
+msgstr ""
+
+#: library/classes/ui/complex/sidebar.manager.ui.class.php:33
+#@ passion
+msgid "Remove"
+msgstr ""
+
+#: library/classes/ui/radio/list/truefalse.radio.ui.class.php:21
+#@ passion
+msgid "True"
+msgstr ""
+
+#: library/classes/ui/radio/list/truefalse.radio.ui.class.php:25
+#@ passion
+msgid "False"
+msgstr ""
+
+#: library/classes/ui/select/list.page.ui.class.php:36
+#@ passion
+msgid "-- Select Page --"
+msgstr ""
+
+#: library/classes/ui/select/taxonomy.ui.class.php:34
+#: library/classes/widget/posts.widget.class.php:217
+#: library/cpanel/theme-options/general.php:192
+#@ passion
+msgid "-- Select --"
+msgstr ""
+
+#: library/classes/ui/text/multi.text.ui.class.php:55
+#: library/classes/ui/text/rating.ui.class.php:58
+#@ passion
+msgid "drag"
+msgstr ""
+
+#: library/classes/ui/text/multi.text.ui.class.php:58
+#: library/classes/ui/text/rating.ui.class.php:62
+#@ passion
+msgid "+"
+msgstr ""
+
+#: library/classes/ui/text/multi.text.ui.class.php:59
+#: library/classes/ui/text/rating.ui.class.php:63
+#@ passion
+msgid "-"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:29
+#: library/cpanel/theme-options/extra.php:151
+#: library/cpanel/theme-options/seo.php:63
+#: library/cpanel/theme-options/typography.php:98
+#: library/shortcodes/visual/tabs.php:10
+#: library/widgets/flickr.php:23
+#: library/widgets/newsletter.php:23
+#: library/widgets/social-links.php:23
+#@ passion
+msgid "Title"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:39
+#: library/cpanel/theme-options/general.php:224
+#: library/cpanel/theme-options/single-post.php:197
+#@ passion
+msgid "Number of posts"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:49
+#@ passion
+msgid "Excerpt character limit"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:59
+#@ passion
+msgid "Is hide title"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:70
+#@ passion
+msgid "Is hide created date"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:81
+#@ passion
+msgid "Is hide comments"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:92
+#@ passion
+msgid "Is hide views"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:103
+#@ passion
+msgid "Is hide excerpt"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:114
+#@ passion
+msgid "Is hide readmore"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:131
+#: library/cpanel/theme-options/general.php:136
+#: library/cpanel/theme-options/single-post.php:48
+#@ passion
+msgid "Categories"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:145
+#: library/classes/widget/posts.widget.class.php:159
+#: library/cpanel/theme-options/general.php:149
+#: library/cpanel/theme-options/single-post.php:60
+#@ passion
+msgid "Tags"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:173
+#@ passion
+msgid "Post Format"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:187
+#@ passion
+msgid "Order by"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:190
+#@ passion
+msgid "Latest news"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:191
+#@ passion
+msgid "Popular by view count"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:192
+#@ passion
+msgid "Most comments"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:193
+#@ passion
+msgid "Random"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:203
+#@ passion
+msgid "Is combine condition by <i>Tags</i>, <i>Categories</i>, <i>Format</i>"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:214
+#: library/cpanel/theme-options/general.php:189
+#@ passion
+msgid "Timestamp (ago)"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:218
+#: library/cpanel/theme-options/general.php:193
+#@ passion
+msgid "1 week"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:219
+#: library/cpanel/theme-options/general.php:194
+#@ passion
+msgid "2 weeks"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:220
+#: library/cpanel/theme-options/general.php:195
+#@ passion
+msgid "3 weeks"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:221
+#: library/cpanel/theme-options/general.php:196
+#@ passion
+msgid "1 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:222
+#: library/cpanel/theme-options/general.php:197
+#@ passion
+msgid "2 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:223
+#: library/cpanel/theme-options/general.php:198
+#@ passion
+msgid "3 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:224
+#: library/cpanel/theme-options/general.php:199
+#@ passion
+msgid "4 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:225
+#: library/cpanel/theme-options/general.php:200
+#@ passion
+msgid "5 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:226
+#: library/cpanel/theme-options/general.php:201
+#@ passion
+msgid "6 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:227
+#: library/cpanel/theme-options/general.php:202
+#@ passion
+msgid "7 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:228
+#: library/cpanel/theme-options/general.php:203
+#@ passion
+msgid "8 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:229
+#: library/cpanel/theme-options/general.php:204
+#@ passion
+msgid "9 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:230
+#: library/cpanel/theme-options/general.php:205
+#@ passion
+msgid "10 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:231
+#: library/cpanel/theme-options/general.php:206
+#@ passion
+msgid "11 months"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:232
+#: library/cpanel/theme-options/general.php:207
+#@ passion
+msgid "1 year"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:233
+#: library/cpanel/theme-options/general.php:208
+#@ passion
+msgid "2 years"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:234
+#: library/cpanel/theme-options/general.php:209
+#@ passion
+msgid "3 years"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:235
+#: library/cpanel/theme-options/general.php:210
+#@ passion
+msgid "4 years"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:236
+#: library/cpanel/theme-options/general.php:211
+#@ passion
+msgid "5 years"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:237
+#: library/cpanel/theme-options/general.php:212
+#@ passion
+msgid "6 years"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:238
+#: library/cpanel/theme-options/general.php:213
+#@ passion
+msgid "7 years"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:239
+#: library/cpanel/theme-options/general.php:214
+#@ passion
+msgid "8 years"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:240
+#: library/cpanel/theme-options/general.php:215
+#@ passion
+msgid "9 years"
+msgstr ""
+
+#: library/classes/widget/posts.widget.class.php:241
+#: library/cpanel/theme-options/general.php:216
+#@ passion
+msgid "10 years"
+msgstr ""
+
+#: library/cpanel/layout-manager.php:35
+#@ passion
+msgid "Layout & Sidebar Manager"
+msgstr ""
+
+#: library/cpanel/layout-manager.php:36
+#: library/cpanel/sidebar-manager.php:60
+#: library/cpanel/theme-options.php:51
+#@ passion
+msgid "Visit author URL:"
+msgstr ""
+
+#: library/cpanel/layout-manager.php:42
+#: library/cpanel/layout-manager.php:76
+#: library/cpanel/theme-options.php:57
+#: library/cpanel/theme-options.php:109
+#@ passion
+msgid "Save"
+msgstr ""
+
+#: library/cpanel/sidebar-manager.php:24
+#@ passion
+msgid "Sidebars"
+msgstr ""
+
+#: library/cpanel/theme-options.php:44
+#@ passion
+msgid "Reset"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:13
+#@ passion
+msgid "Blog post"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:21
+#@ passion
+msgid "For each article in list, show"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:27
+#@ passion
+msgid "Excerpt"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:31
+#@ passion
+msgid "Full content"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:35
+#@ passion
+msgid "Limit number characters"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:63
+#: library/metaboxes/post.php:135
+#@ passion
+msgid "Blog thumbnail"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:110
+#@ passion
+msgid "Display content formatted"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:112
+#@ passion
+msgid "If value is <code>Yes</code>, thumbnails has been replaced by video, audio or gallery shortcode"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:113
+#: library/cpanel/theme-options/extra.php:54
+#: library/cpanel/theme-options/extra.php:196
+#: library/cpanel/theme-options/general.php:179
+#: library/cpanel/theme-options/general.php:267
+#: library/cpanel/theme-options/single-post.php:164
+#: library/metaboxes/post.php:166
+#: library/shortcodes/visual/button.php:22
+#@ passion
+msgid "Yes"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:123
+#@ passion
+msgid "Created Date"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:125
+#: library/cpanel/theme-options/blog-posts.php:137
+#: library/cpanel/theme-options/blog-posts.php:149
+#: library/cpanel/theme-options/extra.php:42
+#: library/cpanel/theme-options/extra.php:74
+#: library/cpanel/theme-options/extra.php:123
+#: library/cpanel/theme-options/extra.php:153
+#: library/cpanel/theme-options/extra.php:164
+#: library/cpanel/theme-options/extra.php:175
+#: library/cpanel/theme-options/general.php:110
+#: library/cpanel/theme-options/single-post.php:25
+#: library/cpanel/theme-options/single-post.php:38
+#: library/cpanel/theme-options/single-post.php:50
+#: library/cpanel/theme-options/single-post.php:62
+#: library/cpanel/theme-options/single-post.php:74
+#: library/cpanel/theme-options/single-post.php:86
+#: library/cpanel/theme-options/single-post.php:98
+#: library/cpanel/theme-options/single-post.php:121
+#: library/cpanel/theme-options/single-post.php:133
+#: library/cpanel/theme-options/single-post.php:153
+#: library/cpanel/theme-options/single-post.php:219
+#@ passion
+msgid "Show"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:126
+#: library/cpanel/theme-options/blog-posts.php:138
+#: library/cpanel/theme-options/blog-posts.php:150
+#: library/cpanel/theme-options/extra.php:43
+#: library/cpanel/theme-options/extra.php:75
+#: library/cpanel/theme-options/extra.php:124
+#: library/cpanel/theme-options/extra.php:154
+#: library/cpanel/theme-options/extra.php:165
+#: library/cpanel/theme-options/extra.php:176
+#: library/cpanel/theme-options/general.php:111
+#: library/cpanel/theme-options/single-post.php:26
+#: library/cpanel/theme-options/single-post.php:39
+#: library/cpanel/theme-options/single-post.php:51
+#: library/cpanel/theme-options/single-post.php:63
+#: library/cpanel/theme-options/single-post.php:75
+#: library/cpanel/theme-options/single-post.php:87
+#: library/cpanel/theme-options/single-post.php:99
+#: library/cpanel/theme-options/single-post.php:122
+#: library/cpanel/theme-options/single-post.php:134
+#: library/cpanel/theme-options/single-post.php:154
+#: library/cpanel/theme-options/single-post.php:220
+#@ passion
+msgid "Hide"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:135
+#: library/cpanel/theme-options/single-post.php:96
+#@ passion
+msgid "Comment count"
+msgstr ""
+
+#: library/cpanel/theme-options/blog-posts.php:147
+#: library/cpanel/theme-options/single-post.php:84
+#@ passion
+msgid "View count"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:13
+#@ passion
+msgid "Pre defined colors"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:95
+#@ passion
+msgid "Custom colors"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:102
+#@ passion
+msgid "Primary color"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:112
+#@ passion
+msgid "Link color"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:113
+#@ passion
+msgid "It's color of tag <code>a</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:122
+#@ passion
+msgid "Link color hover"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:123
+#@ passion
+msgid "It's color of tag <code>a:hover</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:132
+#@ passion
+msgid "Text color"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:133
+#@ passion
+msgid "It's color of body, post content, widget content, ..."
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:140
+#@ passion
+msgid "Heading color"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:141
+#@ passion
+msgid "It's color of tag <code>h1</code> <code>h2</code> <code>h3</code> <code>h4</code> <code>h5</code> <code>h6</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:149
+#@ passion
+msgid "Menu item link color"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:157
+#@ passion
+msgid "Menu item link color hover (active)"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:165
+#@ passion
+msgid "Icon color"
+msgstr ""
+
+#: library/cpanel/theme-options/color-scheme.php:166
+#@ passion
+msgid "It's color of icon-comment, icon-view, icon-readmore,..."
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:13
+#@ passion
+msgid "Contact Infomation"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:21
+#@ passion
+msgid "Postal code"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:31
+#@ passion
+msgid "Country name"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:41
+#@ passion
+msgid "Phone number"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:51
+#@ passion
+msgid "Fax number"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:61
+#: library/shortcodes/contact-form.php:42
+#@ passion
+msgid "Email"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:71
+#: library/shortcodes/contact-form.php:51
+#@ passion
+msgid "Address"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:84
+#@ passion
+msgid "Google Map"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:85
+#@ passion
+msgid "How to get it? Click"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:85
+#@ passion
+msgid "here"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:93
+#@ passion
+msgid "Gmap Marker"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:94
+#@ passion
+msgid "You can download, and edit marker image from PSD file. Download <a href=\"https://db.tt/qssyQ4pY\" target=\"_blank\">here</a>"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:102
+#@ passion
+msgid "Descripton"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:114
+#@ passion
+msgid "Contact Form"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:122
+#@ passion
+msgid "reCaptcha"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:130
+#@ passion
+msgid "To view skins preview, click <a target=\"_blank\" href=\"https://db.tt/cYvusoxp\">here</a>.<br/>To create your public & private key, click <a target=\"_blank\" href=\"http://www.google.com/recaptcha/whyrecaptcha\">here</a>"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:134
+#@ passion
+msgid "-- Hide --"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:135
+#@ passion
+msgid "Clean"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:136
+#@ passion
+msgid "Red"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:137
+#@ passion
+msgid "White"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:138
+#@ passion
+msgid "Black glass"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:178
+#@ passion
+msgid "Mail Reply Template"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:30
+#: library/cpanel/theme-options/extra.php:112
+#: library/cpanel/theme-options/extra.php:207
+#: library/cpanel/theme-options/extra.php:218
+#: library/cpanel/theme-options/extra.php:229
+#: library/cpanel/theme-options/extra.php:240
+#: library/cpanel/theme-options/seo.php:29
+#@ passion
+msgid "Enable"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:31
+#: library/cpanel/theme-options/extra.php:113
+#: library/cpanel/theme-options/extra.php:208
+#: library/cpanel/theme-options/extra.php:219
+#: library/cpanel/theme-options/extra.php:230
+#: library/cpanel/theme-options/extra.php:241
+#: library/cpanel/theme-options/seo.php:30
+#@ passion
+msgid "Disable"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:18
+#@ passion
+msgid "Additional Features"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:28
+#@ passion
+msgid "Custom thumbnail for each post"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:29
+#@ passion
+msgid "By default, image will be auto crop. Enable this feature, you can manual upload image for each size."
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:40
+#@ passion
+msgid "Breadcrumb"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:52
+#@ passion
+msgid "Optimize for mobile (tablet)"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:53
+#@ passion
+msgid "Auto detect device - mobile (tablet) - and convert image size to small. The load time of page is faster."
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:64
+#@ passion
+msgid "Youtube (shortcode)"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:72
+#@ passion
+msgid "Video information"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:76
+#@ passion
+msgid "If you set the parameter value to <code>Hide</code>, then the player will not display information like the video title and uploader before the video starts playing."
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:83
+#@ passion
+msgid "Theme"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:87
+#@ passion
+msgid "The Dark"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:88
+#@ passion
+msgid "The Light"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:96
+#@ passion
+msgid "Coltrols"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:100
+#@ passion
+msgid "Player controls DO NOT display in the player."
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:101
+#@ passion
+msgid "Player controls display in the player"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:102
+#@ passion
+msgid "Player controls ONLY display in the player (after the user initiates the video playback)"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:110
+#@ passion
+msgid "HD playback by default"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:114
+#@ passion
+msgid "This has no effect on the Chromeless Player.<br/> This also has no effect if an HD version of the video is not available."
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:121
+#@ passion
+msgid "Related videos"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:125
+#@ passion
+msgid "This option indicates whether the player should show related videos when playback of the initial video ends"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:134
+#@ passion
+msgid "Vimeo (shortcode)"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:142
+#@ passion
+msgid "Color"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:155
+#@ passion
+msgid "Show the title on the video"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:162
+#@ passion
+msgid "Byline"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:166
+#@ passion
+msgid "Show the user's byline on the video"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:173
+#@ passion
+msgid "Portrait"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:177
+#@ passion
+msgid "Show the user's portrait on the video"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:186
+#@ passion
+msgid "Gallery (shortcode - on single post)"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:194
+#@ passion
+msgid "Allow full screen"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:198
+#@ passion
+msgid "This will show an icon at the top-right that toggles the fullscreen"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:205
+#@ passion
+msgid "Keyboard navigation"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:209
+#: library/cpanel/theme-options/extra.php:220
+#@ passion
+msgid "Turn on keyboard navigation with the arrows"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:216
+#@ passion
+msgid "Arrows"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:227
+#@ passion
+msgid "Click to change"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:238
+#@ passion
+msgid "Swipe to change"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:249
+#@ passion
+msgid "Navigation position"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:251
+#: library/cpanel/theme-options/general.php:34
+#: library/cpanel/theme-options/typography.php:134
+#@ passion
+msgid "Top"
+msgstr ""
+
+#: library/cpanel/theme-options/extra.php:252
+#: library/cpanel/theme-options/general.php:45
+#: library/cpanel/theme-options/typography.php:158
+#@ passion
+msgid "Bottom"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:16
+#@ passion
+msgid "Logo - Favicon - Apple Icon"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:24
+#@ passion
+msgid "Logo"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:35
+#@ passion
+msgid "Margin:"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:56
+#@ passion
+msgid "Left"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:67
+#@ passion
+msgid "Right"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:79
+#@ passion
+msgid "Favicon"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:88
+#@ passion
+msgid "Apple Icon"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:89
+#@ passion
+msgid "Upload your <a target=\"_blank\" href=\"https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html\">apple icon</a> (152x152). This image will be crop to multi size for iPhone(retina), iPad(retina)"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:98
+#@ passion
+msgid "Header"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:108
+#@ passion
+msgid "Search form"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:119
+#@ passion
+msgid "Headline"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:127
+#@ passion
+msgid "Prefix"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:129
+#@ passion
+msgid "Breaking News"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:162
+#@ passion
+msgid "Post formats"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:177
+#@ passion
+msgid "Relation"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:178
+#@ passion
+msgid "Combine condition by <code>Tags</code> <code>Categories</code> and <code>Format</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:225
+#@ passion
+msgid "Select <code>0</code> to hide headline."
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:237
+#@ passion
+msgid "Top Banner"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:245
+#@ passion
+msgid "Image"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:254
+#@ passion
+msgid "Link to"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:265
+#@ passion
+msgid "Open on new Tab"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:275
+#@ passion
+msgid "Custom content"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:276
+#@ passion
+msgid "E.g. Google adsense code, or your custom HTML,..."
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:289
+#@ passion
+msgid "Footer"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:297
+#@ passion
+msgid "Footer information"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:298
+#@ passion
+msgid "Enter the content you want to display in your footer (e.g. copyright text)"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:311
+#@ passion
+msgid "System"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:321
+#@ passion
+msgid "Section status"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:322
+#@ passion
+msgid "<code>theme-options</code>Setting default status of sections"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:323
+#@ passion
+msgid "Opened"
+msgstr ""
+
+#: library/cpanel/theme-options/general.php:324
+#@ passion
+msgid "Closed"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:17
+#: library/metaboxes/page.php:74
+#: library/metaboxes/post.php:115
+#@ passion
+msgid "SEO - Search engine optimization"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:27
+#@ passion
+msgid "Status"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:28
+#@ passion
+msgid "If you using any SEO Plugin, please disable this option."
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:40
+#@ passion
+msgid "Your site name"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:41
+#@ passion
+msgid "Your site description"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:42
+#@ passion
+msgid "Type of term. E.g. category, post_tag"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:43
+#@ passion
+msgid "Name of category or tag"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:44
+#@ passion
+msgid "Number of current page"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:45
+#@ passion
+msgid "Name of current page"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:46
+#@ passion
+msgid "Name of current post"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:47
+#@ passion
+msgid "Author of current post(page)"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:48
+#@ passion
+msgid "Categories of current post"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:49
+#@ passion
+msgid "Tags of current post"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:50
+#@ passion
+msgid "Name of current author (author page)"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:51
+#@ passion
+msgid "Search keyword"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:52
+#@ passion
+msgid "Number of search results"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:73
+#: library/cpanel/theme-options/seo.php:85
+#@ passion
+msgid "<code>HOME</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:77
+#@ passion
+msgid "Front Page (it's static page)"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:89
+#@ passion
+msgid "Blog posts (display latest posts with pagination)"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:97
+#@ passion
+msgid "<code>TAXONOMY</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:101
+#@ passion
+msgid "Category or Tag (taxonomy - display post lists with pagination)"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:125
+#@ passion
+msgid "Single Post (article)"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:137
+#@ passion
+msgid "Author Page (display all posts created by an author)"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:149
+#@ passion
+msgid "Search Page"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:157
+#@ passion
+msgid "<code>404</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:170
+#: library/metaboxes/page.php:52
+#: library/metaboxes/post.php:93
+#: library/metaboxes/post.php:201
+#@ passion
+msgid "Keywords"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:171
+#@ passion
+msgid "Enter your website keyword(s), separated by comma.<br/>This is global keywords, for each post, page, category, tag,.. you can manual append other keyword."
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:183
+#: library/metaboxes/page.php:64
+#: library/metaboxes/post.php:105
+#: library/metaboxes/post.php:213
+#: library/widgets/newsletter.php:42
+#@ passion
+msgid "Description"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:184
+#@ passion
+msgid "Enter your website description.<br/>This is global description, It will be replace by manual description from post, page, category, tag,.."
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:196
+#@ passion
+msgid "Facebook Open Graph Image"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:197
+#@ passion
+msgid "<br/>It's default value for \"og:image.\""
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:205
+#@ passion
+msgid "Facebook Open Graph Type"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:206
+#@ passion
+msgid "<br/>Enter your custom object type OR set default value is \"website\".\""
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:214
+#@ passion
+msgid "Facebook Page ID"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:223
+#@ passion
+msgid "Facebook App ID"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:232
+#@ passion
+msgid "Facebook Admins"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:241
+#@ passion
+msgid "Google profile"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:242
+#@ passion
+msgid "<a href=\"https://plus.google.com/authorship\" target=\"_blank\">Link to your Google+ profile using rel=\"author\"</a>."
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:250
+#@ passion
+msgid "Twitter cards"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:251
+#@ passion
+msgid "Please enter your twitter name with format <code>@your_name</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:261
+#@ passion
+msgid "Google analytics"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:270
+#@ passion
+msgid "Enter <a href=\"http://www.google.com/analytics/\" target=\"_blank\">Google Analytics</a> code. This should be something like: <code>&ltscript type=\"text/javascript\"&gt;  ...  &lt;/script&gt;</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:288
+#@ passion
+msgid "Website Verification Services"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:295
+#@ passion
+msgid "Google Webmaster Tools"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:297
+#, php-format
+#@ passion
+msgid "Enter your meta key \"content\" value to verify your website with <a target=\"_blank\" href=\"https://www.google.com/webmasters/tools/\">Google Webmaster Tools</a>.<br/>Example:<br/>%s"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:304
+#@ passion
+msgid "Bing Webmaster Center"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:306
+#, php-format
+#@ passion
+msgid "Enter your meta key \"content\" value to verify your website with <a target=\"_blank\" href=\"http://www.bing.com/webmaster/\">Bing Webmaster Center</a>.<br/>Example:<br/>%s"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:313
+#@ passion
+msgid "Pinterest Site Verification"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:315
+#, php-format
+#@ passion
+msgid "Enter your meta key \"content\" value to verify your website with <a target=\"_blank\" href=\"https://pinterest.com/website/verify/\">Pinterest Site Verification</a>.<br/>Example:<br/>%s"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:322
+#@ passion
+msgid "Yandex Webmaster"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:324
+#, php-format
+#@ passion
+msgid "Enter your meta key \"content\" value to verify your website with <a target=\"_blank\" href=\"https://webmaster.yandex.com/sites/\">Yandex Webmaster</a>.<br/>Example:<br/>%s"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:13
+#@ passion
+msgid "Metadata"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:23
+#@ passion
+msgid "Thumbnail (standard post)"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:35
+#@ passion
+msgid "Thumbnail (other format)"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:36
+#@ passion
+msgid "Other format e.g. <code>Video</code> <code>Audio</code> <code>Gallery</code> <code>Aside</code> <code>Quote</code> <code>Status</code> ..."
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:72
+#@ passion
+msgid "Created date"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:119
+#@ passion
+msgid "Author information"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:131
+#@ passion
+msgid "Author social links"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:142
+#@ passion
+msgid "Previous & Next Post Links"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:151
+#@ passion
+msgid "Prev & next post links"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:162
+#@ passion
+msgid "Is same category"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:175
+#@ passion
+msgid "Related Post"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:185
+#@ passion
+msgid "Get by"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:188
+#: library/shortcodes/system/term_type.php:21
+#@ passion
+msgid "Category"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:189
+#: library/shortcodes/system/term_type.php:24
+#@ passion
+msgid "Tag"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:198
+#@ passion
+msgid "Select <code>0</code> to hide this section."
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:208
+#@ passion
+msgid "Comment System"
+msgstr ""
+
+#: library/cpanel/theme-options/single-post.php:217
+#@ passion
+msgid "Default comment system"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:38
+#@ passion
+msgid "Common"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:55
+#@ passion
+msgid "Body"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:63
+#@ passion
+msgid "Widget title (main)"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:71
+#@ passion
+msgid "Widget title (footer)"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:81
+#@ passion
+msgid "Post | Page"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:107
+#@ passion
+msgid "Content"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:117
+#@ passion
+msgid "Navigation"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:142
+#@ passion
+msgid "Primary"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:150
+#@ passion
+msgid "Secondary"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:167
+#@ passion
+msgid "Heading"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:187
+#@ passion
+msgid "H1"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:197
+#@ passion
+msgid "H2"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:206
+#@ passion
+msgid "H3"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:215
+#@ passion
+msgid "H4"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:224
+#@ passion
+msgid "H5"
+msgstr ""
+
+#: library/cpanel/theme-options/typography.php:233
+#@ passion
+msgid "H6"
+msgstr ""
+
+#: library/metaboxes/page.php:24
+#@ passion
+msgid "Is use custom layout for this page"
+msgstr ""
+
+#: library/metaboxes/page.php:40
+#: library/metaboxes/post.php:44
+#@ passion
+msgid "Layout & Sidebar Options"
+msgstr ""
+
+#: library/metaboxes/page.php:53
+#@ passion
+msgid "Enter keyword(s) of current page, separated by comma."
+msgstr ""
+
+#: library/metaboxes/page.php:65
+#@ passion
+msgid "Enter description of current page"
+msgstr ""
+
+#: library/metaboxes/post.php:28
+#: library/metaboxes/post.php:177
+#@ passion
+msgid "Is use custom layout for this post"
+msgstr ""
+
+#: library/metaboxes/post.php:61
+#@ passion
+msgid "Is use custom thumbnail for this post"
+msgstr ""
+
+#: library/metaboxes/post.php:80
+#@ passion
+msgid "Custom Thumbnails"
+msgstr ""
+
+#: library/metaboxes/post.php:94
+#@ passion
+msgid "Enter keyword(s) of current post, separated by comma."
+msgstr ""
+
+#: library/metaboxes/post.php:106
+#@ passion
+msgid "Enter description of current post"
+msgstr ""
+
+#: library/metaboxes/post.php:122
+#@ passion
+msgid "-- Inherit setting from Reading Settings --"
+msgstr ""
+
+#: library/metaboxes/post.php:123
+#@ passion
+msgid "Display all posts on a page"
+msgstr ""
+
+#: library/metaboxes/post.php:139
+#@ passion
+msgid "-- Inherit setting from Theme Option --"
+msgstr ""
+
+#: library/metaboxes/post.php:140
+#@ passion
+msgid "None - Hide thumbnail"
+msgstr ""
+
+#: library/metaboxes/post.php:141
+#@ passion
+msgid "Left - Thumbnal float to left"
+msgstr ""
+
+#: library/metaboxes/post.php:142
+#@ passion
+msgid "Right - Thumbnail float to right"
+msgstr ""
+
+#: library/metaboxes/post.php:143
+#@ passion
+msgid "Zebra - One left, one right,... "
+msgstr ""
+
+#: library/metaboxes/post.php:151
+#@ passion
+msgid "Posts per page"
+msgstr ""
+
+#: library/metaboxes/post.php:162
+#@ passion
+msgid "Is display content formatted"
+msgstr ""
+
+#: library/metaboxes/post.php:165
+#@ passion
+msgid "-- Inherit setting from Theme Options --"
+msgstr ""
+
+#: library/shortcodes/contact-form.php:45
+#@ passion
+msgid "Phone"
+msgstr ""
+
+#: library/shortcodes/contact-form.php:48
+#@ passion
+msgid "Fax"
+msgstr ""
+
+#: library/shortcodes/contact-form.php:65
+#@ passion
+msgid "Send to us a message"
+msgstr ""
+
+#: library/shortcodes/contact-form.php:94
+#@ passion
+msgid "Enter your message (<span>required</span>)"
+msgstr ""
+
+#: library/shortcodes/contact-form.php:113
+#@ passion
+msgid "Send"
+msgstr ""
+
+#: library/shortcodes/share-this-post.php:29
+#@ passion
+msgid "Mail"
+msgstr ""
+
+#: library/shortcodes/share-this-post.php:30
+#@ passion
+msgid "Print"
+msgstr ""
+
+#: library/shortcodes/share-this-post.php:34
+#@ passion
+msgid "Share"
+msgstr ""
+
+#: library/shortcodes/share-this-post.php:38
+#@ passion
+msgid "Google +"
+msgstr ""
+
+#: library/shortcodes/share-this-post.php:45
+#@ passion
+msgid "Follow author"
+msgstr ""
+
+#: library/shortcodes/visual/button.php:4
+#@ passion
+msgid "Button builder"
+msgstr ""
+
+#: library/shortcodes/visual/button.php:9
+#@ passion
+msgid "Button Text"
+msgstr ""
+
+#: library/shortcodes/visual/button.php:14
+#@ passion
+msgid "Button Link"
+msgstr ""
+
+#: library/shortcodes/visual/button.php:19
+#@ passion
+msgid "Open link on new tab"
+msgstr ""
+
+#: library/shortcodes/visual/button.php:29
+#@ passion
+msgid "Button Style"
+msgstr ""
+
+#: library/shortcodes/visual/button.php:36
+#: library/shortcodes/visual/button.php:43
+#@ passion
+msgid "Small"
+msgstr ""
+
+#: library/shortcodes/visual/button.php:52
+#: library/shortcodes/visual/button.php:59
+#@ passion
+msgid "Medium"
+msgstr ""
+
+#: library/shortcodes/visual/button.php:68
+#: library/shortcodes/visual/button.php:75
+#@ passion
+msgid "Big"
+msgstr ""
+
+#: library/shortcodes/visual/button.php:85
+#: library/shortcodes/visual/tabs.php:23
+#@ passion
+msgid "Insert"
+msgstr ""
+
+#: library/shortcodes/visual/tabs.php:4
+#@ passion
+msgid "Container Builder"
+msgstr ""
+
+#: library/shortcodes/visual/tabs.php:13
+#@ passion
+msgid "Enter your content"
+msgstr ""
+
+#: library/shortcodes/visual/tabs.php:16
+#@ passion
+msgid "remove"
+msgstr ""
+
+#: library/shortcodes/visual/tabs.php:22
+#@ passion
+msgid "Add new element"
+msgstr ""
+
+#: library/widgets/flickr.php:7
+#@ passion
+msgid "Kopa Flickr"
+msgstr ""
+
+#: library/widgets/flickr.php:8
+#@ passion
+msgid "Display list photo from flickr"
+msgstr ""
+
+#: library/widgets/flickr.php:33
+#@ passion
+msgid "ID"
+msgstr ""
+
+#: library/widgets/flickr.php:34
+#@ passion
+msgid "Get your flickr ID. Click <a href=\"http://idgettr.com/\" target=\"_blank\">here</a>"
+msgstr ""
+
+#: library/widgets/flickr.php:43
+#@ passion
+msgid "Number of photos"
+msgstr ""
+
+#: library/widgets/list-alpha.php:7
+#@ passion
+msgid "Kopa Posts List A"
+msgstr ""
+
+#: library/widgets/list-alpha.php:8
+#@ passion
+msgid "Display posts with thumbnail (align : left)"
+msgstr ""
+
+#: library/widgets/list-alpha.php:17
+#@ passion
+msgid "Layout"
+msgstr ""
+
+#: library/widgets/list-alpha.php:20
+#@ passion
+msgid "Small thumbnail for each post"
+msgstr ""
+
+#: library/widgets/list-alpha.php:21
+#@ passion
+msgid "Only a thumbnail for first post"
+msgstr ""
+
+#: library/widgets/list-alpha.php:22
+#@ passion
+msgid "Big thumbnail for first post, small for other"
+msgstr ""
+
+#: library/widgets/list-alpha.php:23
+#@ passion
+msgid "Medium thumbnail for first, small for second, none for other"
+msgstr ""
+
+#: library/widgets/list-alpha.php:56
+#: library/widgets/list-beta.php:96
+#: library/widgets/media-center.php:235
+#: library/widgets/slider-flex.php:287
+#@ passion
+msgid "Posts not found. Pleae config this widget again!"
+msgstr ""
+
+#: library/widgets/list-beta.php:7
+#@ passion
+msgid "Kopa Posts List B"
+msgstr ""
+
+#: library/widgets/list-beta.php:8
+#@ passion
+msgid "Display posts with thumbnail (align : right)"
+msgstr ""
+
+#: library/widgets/media-center.php:7
+#@ passion
+msgid "Kopa Media Center"
+msgstr ""
+
+#: library/widgets/media-center.php:8
+#@ passion
+msgid "Display lists post with small thumbnail"
+msgstr ""
+
+#: library/widgets/media-center.php:20
+#@ passion
+msgid "Post per row"
+msgstr ""
+
+#: library/widgets/media-center.php:25
+#@ passion
+msgid " column"
+msgstr ""
+
+#: library/widgets/media-center.php:33
+#@ passion
+msgid "Thumbnail size"
+msgstr ""
+
+#: library/widgets/newsletter.php:7
+#@ passion
+msgid "Kopa Newsletter"
+msgstr ""
+
+#: library/widgets/newsletter.php:8
+#@ passion
+msgid "Display email subscriptions form (by http://feedburner.google.com)"
+msgstr ""
+
+#: library/widgets/newsletter.php:33
+#@ passion
+msgid "URI"
+msgstr ""
+
+#: library/widgets/newsletter.php:67
+#@ passion
+msgid "Your Emails"
+msgstr ""
+
+#: library/widgets/newsletter.php:70
+#@ passion
+msgid "Subscribe"
+msgstr ""
+
+#: library/widgets/quick-views.php:7
+#@ passion
+msgid "Kopa Quick Views"
+msgstr ""
+
+#: library/widgets/quick-views.php:8
+#@ passion
+msgid "Display posts: popular - random - most comments"
+msgstr ""
+
+#: library/widgets/quick-views.php:13
+#@ passion
+msgid "Number of posts (for each section)"
+msgstr ""
+
+#: library/widgets/quick-views.php:21
+#@ passion
+msgid "Section order"
+msgstr ""
+
+#: library/widgets/quick-views.php:24
+#@ passion
+msgid "Random, Popular, Most Comments"
+msgstr ""
+
+#: library/widgets/quick-views.php:25
+#@ passion
+msgid "Random, Most Comments, Popular"
+msgstr ""
+
+#: library/widgets/quick-views.php:26
+#@ passion
+msgid "Popular, Random, Most Comments"
+msgstr ""
+
+#: library/widgets/quick-views.php:27
+#@ passion
+msgid "Popular, Most Comments, Random"
+msgstr ""
+
+#: library/widgets/quick-views.php:28
+#@ passion
+msgid "Most Comments, Random, Popular"
+msgstr ""
+
+#: library/widgets/quick-views.php:29
+#@ passion
+msgid "Most Comments, Popular, Random"
+msgstr ""
+
+#: library/widgets/quick-views.php:45
+#@ passion
+msgid "Popular Posts"
+msgstr ""
+
+#: library/widgets/quick-views.php:46
+#@ passion
+msgid "Random Posts"
+msgstr ""
+
+#: library/widgets/quick-views.php:47
+#@ passion
+msgid "Most Comment"
+msgstr ""
+
+#: library/widgets/slider-flex.php:7
+#@ passion
+msgid "Kopa Flex Slider"
+msgstr ""
+
+#: library/widgets/slider-flex.php:8
+#@ passion
+msgid "Display posts as flex slider"
+msgstr ""
+
+#: library/widgets/slider-flex.php:18
+#@ passion
+msgid "Size of Image slide"
+msgstr ""
+
+#: library/widgets/slider-flex.php:33
+#@ passion
+msgid "Disable slide autoplay"
+msgstr ""
+
+#: library/widgets/social-links.php:7
+#@ passion
+msgid "Kopa Social Links"
+msgstr ""
+
+#: library/widgets/social-links.php:8
+#@ passion
+msgid "Display your social links"
+msgstr ""
+
+#: library/widgets/social-links.php:33
+#@ passion
+msgid "Is display icon color"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:129
+#@ passion
+msgid "<code>SKIN</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:155
+#@ passion
+msgid "<code>PUBLIC KEY</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/contact.php:166
+#@ passion
+msgid "<code>PRIVATE KEY</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:109
+#@ passion
+msgid "<code>PAGE</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:121
+#@ passion
+msgid "<code>POST</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:133
+#@ passion
+msgid "<code>AUTHOR</code>"
+msgstr ""
+
+#: library/cpanel/theme-options/seo.php:145
+#@ passion
+msgid "<code>SEARCH</code>"
+msgstr ""
+
+#: library/ini.php:381
+#@ passion
+msgid "Stack overflow"
+msgstr ""
+
+#: library/ini.php:391
+#@ passion
+msgid "Weibo"
+msgstr ""
+

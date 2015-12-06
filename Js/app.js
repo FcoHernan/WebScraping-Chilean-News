@@ -1,7 +1,8 @@
 var request = require('request');
 var cheerio = require('cheerio');
+var mysql 	= require('mysql');
 
-var mysql = require('mysql');
+//Conexión con base de datos
 var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
@@ -19,22 +20,37 @@ connection.connect(function(error){
 });
 
 //Seleccionar páginas
-var query = connection.query('SELECT name, site FROM newspapers WHERE enabled="1"', function(error, result){
+var queryNewsCategories='SELECT idNews, nameNews, siteNews, localizedNews, idCat, nameCat, siteCat, enabledCat, fkNewspapersCat FROM newspapers , categories WHERE idNews = fkNewspapersCat';
+var query = connection.query(queryNewsCategories, function(error, result){
 	if(error){
-		throw error;
+		console.log("Error en la sintaxis de SQL");
 	}else{
-		if(result.length > 0){
-			console.log(result);
-			console.log('\nSe encontraron '+result.length+' resultados\n');
-		}else{
-			console.log('Registro no encontrado');
-		}
+		for (var i = 0; i <= result.length - 1; i++) {
+			//console.log(i);
+			//console.log(JSON.stringify(result[i]["siteCat"]));
+		};
+			var link = JSON.parse(JSON.stringify(result[0]["siteCat"]));
+			console.log(link);
+			request({url: link, encoding: 'utf8'}, function(err, resp, body){
+				if(!err && resp.statusCode == 200){
+					var $ = cheerio.load(body);
+					console.log(body);
+					$('.blog-posts .hnews h2 a').each(function(){
+													var titulo = $(this).html();
+													//console.log(titulo+' \ ');
+													});
+				}
+				else{
+					console.log("Error de extracción");
+				}
+			});
 	}
 	}
 );
 
 
-
+//web Scraping
+/*
 request({url: 'http://thehackernews.com/', encoding: 'utf8'}, function(err, resp, body){
 	if(!err && resp.statusCode == 200){
 		//console.log(body);
@@ -44,8 +60,10 @@ request({url: 'http://thehackernews.com/', encoding: 'utf8'}, function(err, resp
 										console.log(titulo+' \ ');
 										});
 	}
+	else{
+		console.log("Error de extracción");
+	}
 });
-
-
+*/
 
 connection.end();

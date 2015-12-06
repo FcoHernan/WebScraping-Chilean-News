@@ -1,0 +1,78 @@
+.home-featured aside li img {
+	opacity: 1;
+	-webkit-transition: ease-in-out 0.3s;
+	-moz-transition: ease-in-out 0.3s;
+	-o-transition: ease-in-out 0.3s;
+	transition: ease-in-out 0.3s;
+}
+.home-featured aside li:hover img {
+	opacity: 0.8;
+	-webkit-transition: ease-in-out 0.3s;
+	-moz-transition: ease-in-out 0.3s;
+	-o-transition: ease-in-out 0.3s;
+	transition: ease-in-out 0.3s;
+}
+
+.home-latest article img {
+	width: 100%;
+	margin-bottom: -45px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: ease-in-out 0.2s;
+	-moz-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+.home-latest article:hover img, .masonry-post article:hover img {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: ease-in-out 0.2s;
+	-moz-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+.read-more-icon {
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	color: #fff;
+	font-size: 18px;
+	z-index: 9;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	opacity: 0;
+	-webkit-transition: ease-in-out 0.2s;
+	-moz-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+.home-latest article:hover img, .masonry-post article:hover img {
+	opacity: 0.8;
+	-webkit-transition: ease-in-out 0.2s;
+	-moz-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+	
+}
+.masonry-post img {
+	width: 100%;
+	margin-bottom: -35px;
+	-webkit-transition: ease-in-out 0.2s;
+	-moz-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+.home-masonry .masonry-post img {
+	width: 100%;
+	margin-bottom: -40px;
+	-webkit-transition: ease-in-out 0.2s;
+	-moz-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+

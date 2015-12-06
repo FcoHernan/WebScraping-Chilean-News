@@ -1,0 +1,537 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<title>Passion_ Responsive WordPress theme documentation</title>
+	<!-- Framework CSS -->
+<link rel="stylesheet" href="style.css" media="screen" />
+<link href="assets/src/prettify.css" type="text/css" rel="stylesheet" />
+    <script src="assets/src/prettify.js" type="text/javascript"></script>
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:10px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+<body>
+<div class="wrapper">
+
+	<h1 align="center">&ldquo;Passion- Responsive WordPress Theme documentation&rdquo;</h1>
+	<p class="subtitle">Created: Mar/06/2014<br>
+				Version: 1.0.5 <br/>
+	            WordPress Theme Developed by : <a href="http://kopatheme.com">Kopatheme.com</a><br/>				
+                Email: <a href="mailto:kopatheme@gmail.com">kopatheme@gmail.com</a><br>
+	            Support: <a href="http://kopatheme.com/forum">http://kopatheme.com/forum</a></p>
+	
+<div class="notice">
+		
+After activating the theme please ensure that all required settings mentioned here in are also configured properly. Preview the theme on a browser to confirm that the changes to the settings have taken effect. The look and feel of the theme will not appear perfect unless the required settings have been configured properly, as per the details mentioned on this documentation.
+</div>
+	<div class="separater"></div>
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#IntallTheme">Upload and install the theme</a></li>
+			<li><a href="#DemoContent">Demo Content</a></li>
+			<li><a href="#UpdatingTheTheme">Updating The Theme</a></li>
+			<li><a href="#GeneralSetting">Theme Option</a></li>
+            <li><a href="#CreateCatAndPost">Create Categories and Posts</a>
+            	<ol class="sub-list">
+                	<li><a href="#PrepareImages">Create Category</a></li>
+                    <li><a href="#CatePost">Create Posts</a></li> 
+                </ol>
+            </li>			
+            <li><a href="#CreateMenu">Create Custom Menu</a></li>
+			 <li><a href="#ShortCode">Custom Shortcode Generator</a></li>
+            <li><a href="#LayoutManager">Setup and customize your site with Kopatheme Layout Manager</a>
+            	<ol class="sub-list">
+                	<li><a href="#SetupHomePage">Setup Home Page</a></li>
+                    <li><a href="#SetupFrontPage">Setup Front Page</a></li>
+                    <li><a href="#SetupSinglePage">Setup Single Pages</a></li>
+                    <li><a href="#SetupStaticPage">Setup Pages</a></li>					
+					<li><a href="#SetupTaxonomyPage">Set up Taxonomy Pages</a></li>
+					<li><a href="#SetupAuthorPage">Set up Author Pages</a></li>
+					<li><a href="#SetupSearchPage">Set up Search Pages</a></li>
+					<li><a href="#SetupArchivePage">Set up Archive Pages</a></li>
+					<li><a href="#SetupErrorPage">Set up Error Page</a></li>
+                </ol>
+            </li>
+            <li><a href="#CustomWidget">Custom Widgets</a></li>           
+			<li><a href="#Translation">Translation</a></li>
+			<li><a href="#Appendix">Appendix</a></li>			
+            <li><a href="#SourceCredit">Sources and Credits</a></li>	
+		</ol>
+		<div class="separater"></div>
+</div>
+<div class="wrapper">
+	<h3 id="IntallTheme"><strong>A. Upload and install the theme</strong> - <a href="#toc">top</a></h3>
+	<div class="notice">
+		<strong>Note:</strong>
+		 As a pre-requisite you will need a copy of WordPress version 3.6 or higher installed and running on your server.
+	</div>
+	<p>After you have successfully installed WordPress on your server, you are now ready to install the Passion theme. The process of installation is very easy. Here are the simple steps to upload and install the <strong>Passion</strong> theme:</p>
+	<ol>
+		<li>Download the <strong>Passion </strong> theme from your downloads page</li>
+		<li>Unzip this file</li>
+		<li>Once the file has been unzipped you will notice a file named <strong>Passion.zip</strong>. This is theme files.</li>
+		<li>Login to the WordPress control panel of your website</li>
+		<li>From your <strong>Dashboard</strong>, go to <strong>Appearance > Themes</strong>
+			<ol>
+				<li>Step 1. Click <strong>"Install Themes"</strong></li>
+				<li>Step 2. Click <strong>“Upload”</strong>
+					<img src="images/install-1.jpg" alt="image" />				
+				</li>
+				<li>Step 3.	Find the file Passion.zip on your computer and click <strong>Install Now</strong>
+					<img src="images/install-2.jpg" alt="image" />
+				</li>
+				<li>Step 4. <strong> Active theme</strong>: After successful installation you can either click Activate or go to<strong> Appearance » Themes</strong> and click Activate to make this the current theme. </li>
+			</ol>	
+		</li>
+	</ol>	
+	<p>After activation when you preview the theme you will notice that it looks empty. This is because no content has been added and no configuration has been done yet.</p>
+</div>
+<div class="wrapper">
+	<h3 id="DemoContent"><strong>B. Demo Content</strong> - <a href="#toc">top</a></h3>
+	<p>The theme comes with a demo package. This package includes posts, pages, comments, categories, tags and so on. This demo package is imperative in helping you to learn how the theme works. To import demo content, you can follow these steps:</p>
+	<ul>
+		<li>Go to <em>Tools -&gt; Import</em> and select the WordPress option. If you are prompted to install the WordPress Importer plugin you should do this.
+		</li>
+		<li>Click the <em>Browse</em> button and locate the <strong>demo.xml</strong> file that is inside the theme folder and double click the file to select it and then click the <em>Upload file and import</em> button.
+		</li>
+		<li>A new screen will appear, check the <em>Download and import file attachments</em> option and click <em>Submit</em>.
+		</li>
+	</ul>
+	
+</div>
+<div class="wrapper">
+	<h3 id="UpdatingTheTheme"><strong>C. Updating The Theme</strong> - <a href="#toc">top</a></h3>
+	<p>Once a new update becomes available for the theme, you will notice an update notification in the admin panel. To apply the update the theme needs to be downloaded once again and then reinstalled following the steps 1 – 5 mentioned in section A above.</p>		
+	
+</div>
+
+<div class="wrapper">
+	<h3 id="GeneralSetting"><strong>E. Theme Options</strong> - <a href="#toc">top</a></h3>
+	<p>Go to <strong>Passion > Theme Options</strong>.You will find all the options that the Passion theme offers right here. Here they are: 
+	<img src="images/theme option.jpg" alt="image" /></p>
+		<ol>
+			<li><h4>General Setting</h4>
+				<ul>
+					<li><strong>Logo - Favicon - Apple Icon:</strong> You can upload your logo and adjust margin, upload your custom favicon. Upload your apple icon (152x152). This image will be crop to multi size for iPhone(retina), iPad(retina)</li>
+					<li><strong>Header </strong>:
+					<ul>					
+					<li>Choosing show or hide search form. </li>
+					</ul></li>
+					<li><strong>Headline</strong>
+					<ul>
+					<li>Enter the prefix. </li>					
+					<li>Choosing the categories to show the posts. </li>
+					<li>Choosing the tags to show the posts. </li>
+					<li>Choosing the post format to show the posts. </li>
+					<li>You can choosing combine tags, categories, format to show posts. </li>
+					<li> Enter the number of posts to show</li>
+					</ul>
+					</li>
+					<li><strong>Top banner</strong>
+					<ul>
+					<li>Choosing the image to make the top banner </li>					
+					<li>Enter the link to direct. </li>
+					<li>Choosing the target : open a new tab or no</li>
+					<li> Custom content</li>
+					</ul>
+					</li>
+					<li><strong>Footer:</strong> 
+					<ul>
+					<li><strong>Enter footer information:</strong> Enter the content you want to display in your footer (e.g. copyright text). </li>
+					</ul></li>
+				</ul>
+			</li>
+			
+			<li><h4>Blog Post</h4>
+				<ul>
+					<li>For each article in the blog post, you can choose show either the Excerpt or Full content or enter the number character to limit.</li>
+					<li>Choosing the blog thumbnail styles</li>		
+					<li>Choosing Enable or Disable the Post format. If value is Yes, thumbnails has been replaced by video, audio or gallery shortcode</li>	
+					<li>Choosing show or hide : the view count, comment count, and created date</li>		
+					
+				</ul>
+			</li>
+			<li><h4>Single Post</h4>
+				<ul>
+					<li><strong>Meta data </strong>:
+					<ul>
+					<li>Choosing show or hide the Thumbnail (standard post) . </li>
+					<li>Choosing show or hide  the Thumbnail ( for other post format) . </li>
+					<li>Choosing show or hide the category. </li>
+					<li>Choosing show or hide the created date. </li>
+					<li>Choosing show or hide the view count. </li>
+					<li>Choosing show or hide the comment count. </li>
+					</ul></li>
+					<li><strong>Author </strong>:
+					<ul>
+					<li>Choosing show or hide the autor information. </li>
+					<li>Choosing show or hide  the author's social links </li>					
+					
+					</ul></li>
+					<li><strong>Previous & Next Post Links </strong>:
+					<ul>
+					<li>Choosing show or hide Previous & Next Post Links. </li>
+					<li>Choosing show or hide  the same categories </li>				
+					
+					</ul></li>	
+					
+					<li><strong>Comment System:</strong> Show or hide the comment system</li>
+					<li><strong> Related Posts:</strong> You can choose the related posts get by tag or category and limit the number of post.</li> 
+					
+				</ul>
+			</li>
+			<li><h4>Social Links</h4>
+				<ul>
+					<li> RSS URL: Display the RSS feed button with the default RSS feed or enter a custom feed below. Enter "HIDE" if you want to hide it</li>
+					
+					<li>We provided a lot of social links. Enter your social links </li>
+				</ul>
+			</li>			
+			<li><h4>Typography</h4>
+			<p> There are more than 632 various fonts type to select</p>
+				<ul>
+				    <li><strong>All content- body tag</strong>: Choosing font style to enable customization the font size, font weight, line height</li>	
+					<li><strong>Main content- post, page details</strong>: Choosing font style to enable customization the font size, font weight, line height</li>	
+					<li><strong>Navigation</strong>: Choosing font style to enable customization the font size, font weight, line height</li>					
+					<li><strong>Navigation- top menu</strong>: Choosing font style to enable customization the font size, font weight, line height</li>					
+					<li><strong>Navigation- primary menu</strong>: Choosing font style to enable customization the font size, font weight, line height</li>					
+					<li><strong>Navigation- secondary menu</strong>: Choosing font style to enable customization the font size, font weight, line height</li>					
+					<li><strong>Navigation- bottom menu</strong>: Choosing font style to enable customization the font size, font weight, line height</li>					
+					<li><strong>Widget title</strong>: Choosing font style to enable customization the font size, font weight, line height</li>	
+					<li><strong>Heading title</strong>: Choosing font style to enable customization the font size, font weight, line height</li>	
+					
+				</ul>
+			</li>
+			<li><h4>Extra</h4>
+				<ul><strong>Additional Feature</strong>
+					<li><strong> Custom thumbnail for each post</strong>: Choosing enable/disable Custom thumbnail for each post. If you choose enable, you can customize for each post when creating a new post</li>
+					<li><strong>Breakcrumb</strong>: Choosing show or hide the breakcrumb in the posts</li>					
+					<li><strong>Optimize for mobile (tablet)</strong>: this feature will auto detect thedevice - mobile (tablet) - and convert the image size to small. The load time of page is faster.</li>					
+				</ul>
+				<ul><strong>Lightbox (Pretty Photo)</strong>
+					<li><strong>Play video on lighbox</strong>: Choosing yes/no</li>					
+					<li><strong>Skin</strong>: Choosing the skin type</li>	
+					<li><strong>Modal mode</strong>: Choosing enable/disable. If set to Yes, only the close button will close the window</li>	
+					<li><strong>Title</strong>: Choosing show or hide title of lightboxes</li>	
+					<li><strong>Sharing with Facebook, Twitter</strong>: Choosing show or hide the Sharing button with Facebook, Twitter</li>	
+					<li><strong>Overlay Opacity</strong>: Choosing the Overlay Opacity rate</li>	
+				</ul>
+				<ul><strong>Youtube shortcode</strong>
+					<li><strong>Video information</strong>: If you set the parameter value to Hide, then the player will not display information like the video title and uploader before the video starts playing.</li>					
+					<li><strong>Theme</strong>: Choosing the light style or dark style</li>	
+					<li><strong>Coltrols</strong></li>	
+					<li><strong>HD playback by default</strong>: This has no effect on the Chromeless Player and also has no effect if an HD version of the video is not available.</li>	
+					<li><strong>Related video</strong>: Choosing show or hide</li>						
+				</ul>
+				<ul><strong>Vimeo shortcode</strong>
+					<li><strong>Color</strong>: Select color( Specify the color of the video controls)</li>					
+					<li><strong>Title</strong>: Choosing show or hide</li>	
+					<li><strong>Byline</strong>: Show the user's byline on the video</li>	
+					<li><strong>Portrait</strong>: Show the user's portrait on the video.</li>						
+				</ul>
+			</li>
+			<li><h4>Color scheme</h4>
+				<ul>
+					<li><strong>Pre defined colors</strong> Select Pre defined colors</li>
+					<li><strong>Custom color</strong>:
+					<ul>
+					<li><strong>Primary color:</strong> Changing the main color of the theme.</li>
+					<li><strong>Link Color:</strong> Changing the color of the tags</li>
+					<li><strong>Link Color hover:</strong> Changing the color of the tags when hover</li>
+					<li><strong> Text color:</strong> Changing the color of body, post content, widget content, ...</li>
+					<li><strong>Heading Color:</strong> Changing the color of heading tags</li>
+					<li><strong>Menu item link color:</strong> Changing the color of Menu item link</li>
+					<li><strong>Menu item link color hover (active):</strong> Changing the color of Menu item link(active) when hover</li>
+					
+				    </ul>
+				</ul>
+			</li>
+			<li><h4>Contact</h4>
+				<ul>
+					<li> <strong>Enter the contact information:</strong> phone number, address, email, google map iframe.</li>
+					<li><strong>Description:</strong> which display bellow the contact form</li>
+					<li><strong>Contact form:</strong> Choosing recapcha styles</li>
+					<li><strong>Mail Reply Template:</strong> Enter the info to box to set mail reply template.</li>
+				<div class="notice">
+				<strong>Note:</strong>
+				You need install Configure SMTP plugin to configure and send all outgoing emails via a SMTP server. You can download at <a href="http://wordpress.org/plugins/configure-smtp/"> here</a>.
+				Or using some plugins which have same feature.
+				</li>
+				
+				</div>
+				</ul>
+			</li>
+			<li><h4>Custom CSS</h4>
+				<ul>
+				<li>You can add additional CSS to your code. This CSS code is saved in the database and is not lost when the theme is updated.</li>
+				</ul>
+			</li>	
+			<li><h4>Seo</h4>
+				<ul>
+					<li> <strong>SEO - Search engine optimization</strong>: The theme support Search engine optimization</li>					
+					<li><strong>Google analytics</strong> </li>
+					<li><strong>Website Verification Services</strong> </li>
+				</ul>
+			</li>	
+		</ol>
+		<p>After enter each above option, click on <strong>Save</strong> button.</p>
+</div>
+<div class="wrapper">
+	<h3 id="CreateCatAndPost"><strong>F.Create Categories and Posts</strong> - <a href="#toc">top</a></h3>
+	<p>As you can imagine most of the site content will be posts and images associated with such posts. Categories allow for a broad grouping of such post topics. Now we will start creating categories and publish a few posts. </p>
+	<h4>F.1. Create Category</h4>
+	<ol>
+		<li>Go to <strong>Posts > Categories</strong></li>    
+		<li>Enter new Category name.</li>
+		<li>Scroll down and click on <strong>"Add Category"</strong>. A newly created category will appear . You can then repeat the steps to create some more categories like Fashion, News, Sports, Lifestyle and so on.
+		<p>&nbsp;</p>
+		<p><img src="images/cat-posts-1.jpg" alt="image" /></p>		
+		</li>
+	</ol>
+	<p>With our KOPATHEME Framework, you can customize the layout for each category. Follow the procedures listed below:</p>
+	<ol>
+		<li>Click Category name that you would like to edit
+			<p><img src="images/cat-posts-2.jpg" alt="image" /></p>		
+		</li>
+		<li>
+			Scroll down to the page bottom, as you see in the following image. 
+			<ul>
+			<li>In Theme Options, you setted the default blog thumbnail. If you want to customize any categories , you go to edit that category> Custom blog thumbnail styles</li>
+			<li>In Settings=> Reading. You can set the number of posts to show on blog page. To customize any categories, go to edit that category> Custom the number of posts to display on page</li>
+			<li>You also can customize to display the format of the content .</li>
+			 </li>
+			</ul> <p><img src="images/cat-posts 3.jpg" alt="image" /></p>		
+		</li>		
+		<li>Now, you can select layout and sidebar for this category</li>
+	</ol>
+	<h4>E.2. Create posts</h4>
+	<p>Posts are usually stored under Categories and/or Tags so you can keep related topics together. Now, we will create some posts for our category. </p>
+	<ol>	
+		<li>Go to <strong>Posts > Add New</strong>. Then, enter the Post Title, Post Content and Post Excerpt</li>
+		<li> Check on the categories</li>
+		<li>Scroll down and click on the <strong>"Set featured image"</strong> link on right-bottom side of your page. A small box will appear. Click on "Upload File". Browse and select the file from your hard-drive and upload. Finally set it as “Featured Image" to complete the process.</li>
+		<li>Finally , assign the post to an appropriate category and click "Publish" butto to make the post live.</li>
+	</ol>
+	<p>With our very flexible KOPATHEME Framework, you can customize the layout for each individual post. The procedure is as same as to customize layout for category above</p>
+	<p><img src="images/cat-posts 4.jpg" alt="image" /></p>		
+</div>
+	<div class="wrapper">
+	<h3 id="CreateMenu"><strong>F. Create Custom Menu</strong> - <a href="#toc">top</a></h3>
+	<p>To create a custom menu, go to <strong>Appearance > Menus</strong> in your dashboard.</p>
+		
+    	<strong>Creating a Custom Menu</strong>
+    	<ol>
+			<li>To create a custom navigation menu, in "Edit Menus" tab,  click <strong>Create a New Menu</strong>. Then type menu name, click "Create Menu" button.
+			<p><img src="images/menu-1.jpg" alt="image" /></p>
+			</li>
+			<li> Select a menu to edit:
+				<p><img src="images/menu-2.jpg" alt="image" /></p>
+			</li>
+			<li>Adding Pages and Categories to Your Menu: Adding pages or Categories to your menu is as simple as checking the proper boxes for the pages you want and then clicking <strong>Add to Menu</strong>.
+				<p><img src="images/menu-3.jpg" alt="image" /></p>
+			</li>
+			<li>Creating a custom menu allows you to do the following things:
+				<ul>
+				<li>Change the order of pages in your menu, or delete them.</li>
+				<li>Create nested sub-menus of links, also referred to as “drop-down” menus</li>
+				<li>Create links to category pages allowing you to collect together posts based on that category</li>
+				<li>Add custom links to other sites, such as a link to your Twitter or Instagram profile</li>
+				</ul>
+			</li>
+		
+			<li>Note: When we click on any menu, we can customize this menu 
+				<ul>
+				<li>Enter the Navigation Label to display in the menu.</li>
+				<li> Enter the Title Attribute which dislay when you hover on label's page </li>
+				</ul>
+			</li>
+		</ol>
+		<strong>Manage Menus Location</strong>
+		<p>This theme supports 4 menus.In "Manage Locations" tab, you have to select menus to display for each location</p>
+		<p><img src="images/manage menu location.jpg" alt="image" /></p>
+		<p class="notice">Be sure to click <strong>Save Menu </strong>each time you make changes to your custom menu.</p>    	
+</div>
+
+<div class="wrapper">
+	<h3 id="ShortCode"><strong>G. Custom Shortcode Generator</strong> - <a href="#toc">top</a></h3>
+	<p>It would be imposible to remember the syntax of every shortcodes available options associated with it. Our shorcodes generator is an easy way for you to place a shortcode in the theme to display the content. Within the <strong>"Page"</strong> or <strong>"Post"</strong> or <strong>Kopa Text Widget</strong>, you can see the <strong>Visual Shortcode</strong>. Just click on the shortcode you need then it will be added to the content</p>
+	<p><img src="images/shortcode-generator.jpg" alt="image" /></p>
+	<h4>Shortcodes avaiable with this theme</h4>
+	<p>This theme comes with following shortcode to display the content</p>	
+	<ol>
+		<li>Column shortcode: Click Grid, choosing column shortcodes</li>
+		<li>Dropcap shortcode</li>
+		<li>Button shortcodes</li>
+		<li>Alert box shortcode</li>
+		<li>Tabs Shortcode: Click container=> Tab</li>
+		<li>Accordions shortcode: click container=> Accordion</li>
+		<li>Toggles shortcode: Click container=> Toggle</li>
+		<li>Caption shortcodes</li>	
+		<li>Share this post shortcode: using posts to display the share this post link</li>
+		<li>Video shortcodes: youtube, vimeo, mp4</li>
+		<li>Contact form shortcode</li>
+		
+</ol>
+</div> 
+
+<div class="wrapper">
+	<h3 id="LayoutManager"><strong>H. Kopatheme Layout Manager and Sidebar Manager</strong> - <a href="#toc">top</a></h3>
+	<strong>Sidebar Manager</strong>	
+	<p> Sidebar is an advanced feature of the Kopatheme framework. Sidebars usually contain widgets that an administrator of the site can customize and use to enhance the look and feel of his website. By default, Passion comes with a total of 11 default sidebars with 11 default widgets. You can add new sidebars or remove them as you please.<br/>
+	To create new sidebar, click <strong>Passion> Sidebar Manager</strong>. Enter sidebar name , click Add sidebar button<br/>
+	To remove default/ existing sidebar , click Delete symbol on the right of the sidebar name 
+	</p>
+	<p><img src="images/sidebar-manager.jpg" alt="image" /></p>
+	<strong>Layout Manager</strong>
+	<p> If you need to change layout of your site, you can use layout manager to change the layout. Click <strong>Passion-> Layout Manager.</strong>
+	<img src="images/layout-manager.jpg" alt="image" />
+	</p>
+	
+	<ol class="sub-list">
+		<li id="SetupHomePage">Setup Home Page
+			<p>Click <strong>Passion> Layout Manager> Home.</strong> By default, the WordPress template hierarchy reserves the home.php page for the homepage, but if you set a front page post, it will be displayed instead of home.php.You can change layout of home page by <b>SELECT THE LAYOUT</b> : Front Page, Right Sidebar, Left Sidebar. Next select the sidebars into the appropriate Widget Areas (as shown in the image) to be displayed.</p>
+		</li> 
+		<li id="SetupFrontPage">Setup Front Page
+			<p>The first ,Click <strong>Settings> Reading.</strong> Select the page which you intend to show as your front page from Home page display .
+			<img src="images/front page.jpg" alt="image" />
+			</p>
+			<p>Click <strong>Passion> Layout Manager > Front Page</strong> If you want to change the layout of front page, Click <strong> Passion> Layout Manager> Front Page.</strong></p>
+		</li>                	                   
+		<li id="SetupSinglePage">Setup Posts
+		<p>Click <strong>Passion> Layout Manager > Post.</strong> A Single page displays a detail post from categories. You can change the layout of the single pages by click <b>SELECT THE LAYOUT</b>. Next you need to select sidebars into the Widget Areas to display.</p>
+		</li>
+		<li id="SetupStaticPage">Setup static Pages</li>	
+		<p>Click <strong>Passion> Layout Manager> Page.</strong> Setup page controls the layout for the static pages on the site. You can change layout of the pages by click <b>SELECT THE LAYOUT</b>. Next select sidebars into the Widget Areas to display.</p>
+		<li id="SetupTaxonomyPage">Set up Taxonomy Pages</a></li>
+		<p>Click <strong>Passion> Layout Manager> Category/Tag.</strong>  In WordPress, taxonomy pages are referred to those which display list of posts in a systematic order. Taxonomy is a way to categorize the posts in WordPress. You can change layout of the Taxonomy pages by <b>SELECT THE LAYOUT</b>. Next select sidebars into the Widget Areas to display.</p>
+		<li id="SetupAuthorPage">Set up Author Pages</a></li>
+		<p>Click <strong>Passion> Layout Manager> Author.</strong> In WordPress, author pages are pages which display list of post by author. You can change layout of the author pages by click <b>SELECT THE LAYOUT</b>. Then select sidebars into Widget Areas to display</p>
+		<li id="SetupSearchPage">Set up Search Pages</li>
+		<p>Click <strong>Passion > Layout Manager > Search.</strong> Search page  shows search results. You can change the layout of the Search pages by click <b>SELECT THE LAYOUT</b>. Then select sidebars into Widget Areas to display</p>
+		<li id="SetupArchivePage">Set up Archive Pages</li>
+		<p>Click <strong>Passion> Layout Manager > Archive.</strong>An Archive Page is one which displays all posts arranged by time or category, post type, post Tag, Authors in your sidebar. You can change layout of the Archive pages by <b>SELECT THE LAYOUT</b>. Next select sidebars into the Widget Areas to display.</p>
+		<li id="Setup404Page">Set up 404 Pages</li>
+		<p>Click <strong>Passion > Layout Manager> 404.</strong>  404 page is displayed when a requested URL is not found on the site. You can change the layout of the 404 pages by click <b>SELECT THE LAYOUT</b>. Next select sidebars into the Widget Areas to display.</p>
+		</ol>
+</div>
+<div class="wrapper">
+	<h3 id="CustomWidget"><strong>I. Custom Widget</strong> - <a href="#toc">top</a></h3>
+	<p>WordPress Widgets add content and features to your Sidebars. Examples are the default widgets that come preloaded with a clean installation of WordPress, such as post categories, tag clouds, navigation, search, etc. When you setup Jigoshop Plugin with the WordPress copy on your server, it also adds a number of default widgets. These are designed for supporting the various features of a typical eCommerce website. Beside these default widgets, a lot of other widgets are created by our developers to display content on the website. Available Widgets lists all the current widgets that are installed with your copy of the theme. To use a widget, simply drag and drop it onto the Sidebar and refresh the appropriate page to display its content.</p>
+	<p>	<img src="images/widget.jpg" alt="image" />	</p>
+	<ol>
+		<li><strong> Archives</strong>: This is a default widget. It display a monthly archive of your site’s posts </li>
+		<li><strong> Calendar</strong>: This is a default widget. It display acalendar of your site’s posts </li>
+		<li><strong>Categories</strong>: This is a default widget. It display a list or dropdown of categories</li>
+		<li><strong> Custom menu</strong>: This is a default widget. Use this widget to add one of your custom menus as a widget. </li>
+		   		
+		<li><strong>Kopa Media Center</strong>: It displays a list of the posts with format styles. Dragging and dropping this widget into Sidebars display its content. Enter the Title, select categories, number of post, the number of characters to limited display, tags, post format. Choosing posts/row : column numbers, the thumbnail size, click Save.
+		In this demo, we hide the view count, excerpt, comment counts, readmore button. The image here displays how the widget appears on the sidebar.  <br/>
+		  Choosing 1 column:
+		  <p><img src="images/media center.jpg" alt="image" /></p>
+		  Choosing 2 column:
+		  <p><img src="images/media center 2.jpg" alt="image" /></p>
+		  Choosing 5 column:
+		  <p><img src="images/media center 6.jpg" alt="image" /></p>
+		</li>	
+		<li><strong>Kopa Flexslider</strong>: It displays a list of posts by flex slider. Dragging and dropping this widget into Sidebars display its contents.<br/>
+		Enter the Title, select categories, number of post, the number of characters to limit, tags, post format, order by. Choosing the slide size, click Save.
+		In this demo, we use the size styles 445x271, 700x427, 1223x746. The image here displays how the widget appears on the sidebar.  
+		  <p><img src="images/flexslider.jpg" alt="image" /></p>
+		</li>		
+		<li><strong>Kopa Posts List A</strong>: It displays a list of the posts. Dragging and dropping this widget into Sidebars display its contents. <br/>
+		Enter the Title, select categories, number of post, the number of characters to limit, tags, post format, order by. Choosing the layout, click Save.
+		In this demo, we use the layout styles : Show small thumbnail posts, only show thumbnail for first post, big thumbnail for first post and small thumbnail for other post, medium thumbnail for first post and small thumbnail for the second post and none for other post.<br/>
+		The images here displays how the widget appears on the sidebar. 
+		only show thumbnail for first post:
+		<p> <img src="images/post list a 1.jpg" alt="image"/> </p>	
+			and Show small thumbnail posts: 
+			<p> <img src="images/post list a 2.jpg" alt="image"/> </p>	
+			and big thumbnail for first post and small thumbnail for other post:
+			<p> <img src="images/post list a 3.jpg" alt="image"/> </p>
+			Or  medium thumbnail for first post and small thumbnail for the second post and none for other post.		
+			<p> <img src="images/post list a 4.jpg" alt="image"/> </p>
+				
+		</li>
+		<li><strong>Kopa Posts List B</strong>: It displays a list of posts. Dragging and dropping this widget into Sidebars display its content. <br/>
+		Enter the Title, select the categories, number of post, the number of characters to limit, tags, post format, order by. click Save.
+		The image here displays how the widget appears on the sidebar. 
+			<p> <img src="images/post list b.jpg" alt="image"/> </p>				
+		</li>		
+				
+		<li><strong>Kopa Quick Views</strong>: Displays the tabs of the latest posts, popular posts, random posts for each selected categories. Dragging and dropping this widget into Sidebars display its contents. Enter the Title, select categories, number of post, the number of characters to limited display, tags, post format. click Save.
+		, click Save.
+		The image here displays how the widget appears on the sidebar. 
+		  <p><img src="images/quick view.jpg" alt="image" /></p>
+		</li>
+				
+		<li><strong>Kopa NewsLeter</strong>: Displays email subscriptions form (by http://feedburner.google.com) . Dragging and dropping this widget into Sidebar which you want to display. Enter the Title, url, description, click Save. To know how to use this function, you can reference this post: http://infoheap.com/setup-google-feedburner-email-subscription-newsletter/
+		The image here displays how the widget appears on the sidebar. 
+		  <p><img src="images/newsleter.jpg" alt="image" /></p>
+		</li>	
+		<li><strong>Kopa Social Links</strong>: Displays your social links . Dragging and dropping this widget into Sidebars display its contents. Enter the Title, check or uncheck display color button, click Save. 
+		The image here displays how the widget appears on the sidebar. 
+		  <p><img src="images/social.jpg" alt="image" /></p>
+		</li>
+		<li><strong>Kopa Flickr</strong>: Displays your album from flickr.com. Dragging and dropping this widget into Sidebars display its contents. Enter the Title, id, number of photo to show, click Save. 
+		The image here displays how the widget appears on the sidebar.  
+		  <p><img src="images/flickr.jpg" alt="image" /></p>
+		</li>
+				 
+	</ol>	
+</div>
+    
+<div class="wrapper">
+	<h3 id="Translation"><strong>J. Translation</strong> - <a href="#toc">top</a></h3>
+	<p>If you are familiar with WordPress and the many plugins and themes available for it, you’ve probably come across some strangely named files like .mo, .po, and .pot. This discussion is aimed at explaining how to take a .po file that is included with this theme and translate it into your native language.</p>
+	<strong>SUMMARIZED INSTRUCTIONS:</strong>
+	<ol>
+		<li>Download and install the translation <a href="http://www.poedit.net/">Poedit</a> program.</li>
+		<li>Open the <strong>passion/languages/en_US.po</strong> file with Poedit. Translate the file to your languages with Poedit. For more information, click <a href="http://urbangiraffe.com/articles/translating-wordpress-themes-and-plugins/3/" target="_blank">here</a>.</li>
+		
+		<li>
+			<p>Define your language inside wordpress/wp-config.php file. Open wp-config.php file in any text editor and look for the following code:</p>
+			<p>
+				<code>
+				
+				define ('WPLANG', '');
+				</code>
+			</p>
+			<p>Enter a parameter for <code>WPLANG</code>. This is generally in a format  as <code>language_country</code>. For example, <code>en_US</code>, or <code>de_DE</code>. So, this line will change  to: </p>
+			<p><code>define ('WPLANG', 'de_DE');</code></p>
+			<p>For more information.Click <a href="http://codex.wordpress.org/Installing_WordPress_in_Your_Language#Manually_Installing_Language_Files" target="_blank">here</a></p>
+		 </li>			
+	</ol>
+</div> 
+
+<div class="wrapper">
+	<h3 id="credits"><strong>L) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+	<p>I've used the following images, icons or other files as listed.</p>
+	<ul>
+		
+		<li><a target="_blank" href="http://www.jquery.com">jquery-1.10.2.min.js</a></li>
+		<li><a target="_blank" href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">jquery.prettyPhoto.js</a></li>			
+		<li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/" target="_blank">form validator</a></li>
+        <li><a href="http://malsup.com/jquery/form/" target="_blank">jquery.form.js</a></li>
+        <li><a href="http://masonry.desandro.com/" target="_blank">Magic layout jQuery plugin</a></li>
+        <li><a href="http://www.woothemes.com/flexslider/" target="_blank"> Flexslider jQuery plugin</a></li>
+        <li><a href="http://retinajs.com/" target="_blank">Retina display jQuery plugin</a></li>
+        <li><a href="http://caroufredsel.dev7studios.com/index.php" target="_blank">CarouFredsel slider</a></li>
+        <li><a href="http://isotope.metafizzy.co/" target="_blank">Magic layout jQuery plugin have filter</a></li>
+		<li><a href="http://css3pie.com" target="_blank">PIE</a></li>
+	  <li><a href="http://www.flickr.com/photos/markjsebastian" target="_blank">pictures</a> - <i>by Mark Sebastian</i></li>
+       
+	</ul>
+</div>
+<div class="wrapper">
+	<p>Thank you so much for purchasing this theme. If you have any question relating to the themes please don't hesitate to ask your question at: <a href="http://kopatheme.com/forum">http://kopatheme.com/forum</a></p> 
+	<p class="append-bottom alt large"><strong>KOPATHEME</strong><br>
+	Email: <a href="mailto:kopatheme@gmail.com">kopatheme@gmail.com</a><br>
+	Support: <a href="http://kopatheme.com/forum">kopatheme.com/forum</a></p>
+	<p class="append-bottom alt large">Designed and Developed by: <a href="http://kopatheme.com">kopatheme.com</a></p>
+	 </p>
+	<p class="append-bottom alt large">&nbsp;</p>
+	<p><a href="#toc">Go To Table of Contents</a></p>
+</div>
+</body>
+<script type="text/javascript" src="assets/prettify/prettify.js"></script>
+	<script> prettyPrint(); </script>
+</html>

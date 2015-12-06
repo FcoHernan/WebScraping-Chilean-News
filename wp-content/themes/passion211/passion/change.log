@@ -1,0 +1,29 @@
+#2.1.1
+- update prettyPhoto to v1.3.6
+
+#2.1.0
+- Fix: Security Error
+- Update: BFI Thumb v1.3
+
+#2.0.5
+- Update: shortcode caption
+
+#2.0.4
+- Update google font to 672 fonts
+- Update FLEX SLIDER: allow play video on popup
+
+#2.0.3
+- Replace Css3MediaQuery.js by Respond.js
+
+#2.0.2
+- Gives the slider a seamless infinite loop.
+- Fix some CSS.
+- Allow front-page use layout "static-page" on Layout Manager.
+
+#2.0.1
+- update visual shortcode compatible with Wordpress  3.9
+- change lightbox : pretty photo by magnific popup, support responsive
+
+#2.0.0
+- Apply license GPL 3.0 for all source code, image, icon, javascrip, css
+- Replace Icon-Moon by Font Awesome
