@@ -25,11 +25,11 @@ pool.getConnection(function(err, connection) {
   // Use the connection
   connection.query( 'SELECT nameNews FROM newspapers', function(err, rows) {
     // And done with the connection.
+    if (err) throw err;
     console.log(rows[0]);
     //connection.release();
 
     connection.query( 'SELECT nameNews FROM newspapers', function(err, rows) {
-    	console.log(err);
     if (err) throw err;
     console.log(rows[1]);
     connection.destroy();
