@@ -22,17 +22,24 @@ pool.query(queryNewsCategories, function(err, rows, fields){
 
 
 pool.getConnection(function(err, connection) {
-  // Use the connection
-  connection.query( 'SELECT nameNews FROM newspapers', function(err, rows) {
-    // And done with the connection.
+  var queryNewsCategories='SELECT idNews, nameNews, siteNews, localizedNews, idCat, nameCat, siteCat, enabledCat, fkNewspapersCat FROM newspapers , categories WHERE idNews = fkNewspapersCat';
+  connection.query( queryNewsCategories, function(err, rows) {
     if (err) throw err;
-    console.log(rows[0]);
-    //connection.release();
-
-    connection.query( 'SELECT nameNews FROM newspapers', function(err, rows) {
-    if (err) throw err;
-    console.log(rows[1]);
-    connection.destroy();
-  });
+    // Use the connection
+    var queryInsert="INSERT INTO `newspapers`(`nameNews`, `siteNews`, `enabledNews`, `localizedNews`) VALUES ('ahora', 'url', "+1+", 'puente')";
+    //for (var j = 0; j < titulo.length; j++) {
+      
+      //valor++;
+      /*connection.query( queryInsert, function(err, info) {
+        if (err) throw err;
+        console.log(err);
+        connection.destroy();
+      });*/
+    //}
+    console.log(queryInsert);
+    connection.query(queryInsert  , function(err){
+      if(err) throw err;
+      connection.destroy();
+    });
   });
 });
