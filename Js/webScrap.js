@@ -11,11 +11,20 @@ var pool  = mysql.createPool({
 });
 
 //Seleccionar páginas
-pool.getConnection(function(err, connection) {
+var allCategories = pool.getConnection(function(err, connection) {
 	var queryNewsCategories='SELECT idNews, nameNews, siteNews, localizedNews, idCat, nameCat, siteCat, enabledCat, fkNewspapersCat FROM newspapers , categories WHERE idNews = fkNewspapersCat';
 	connection.query( queryNewsCategories, function(err, rows) {
 		if (err) throw err;
-		for (var index = 0; index <= rows.length - 1; index++) {
+		else{
+			return rows;
+		}
+	});
+});
+console.log(JSON.parse(JSON.stringify(allCategories[0]["idCat"])));
+
+/*
+
+for (var index = 0; index <= rows.length - 1; index++) {
 			option = JSON.parse(JSON.stringify(rows[index]["idCat"]));
 			switch (option){
 
@@ -66,12 +75,9 @@ pool.getConnection(function(err, connection) {
 										//console.log(newQueryInsert);
 	  									connection.query(newQueryInsert  , function(err){
 											if(err) throw err;
-											console.log(1);
 										});
-											//connection.release();
 									}
 								});
-								connection.release();
 								
 							}
 							else{
@@ -84,13 +90,9 @@ pool.getConnection(function(err, connection) {
 				
 				default:
 					//console.log("nueva opcion");
-					break;
+					break
 			}
-			console.log(3);
 		}
-	});
-	console.log(2);
-	//connection.destroy();
-});
+		*/
 
 
