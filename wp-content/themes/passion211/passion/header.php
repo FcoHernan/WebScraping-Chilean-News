@@ -85,9 +85,7 @@
 					}
 					?>                                         
 					<?php if ( 'true' == KopaOptions::get_option( 'is_display_search_form', 'true' ) ): ?>
-						<div class="search-box pull-right clearfix">
-							<?php get_search_form(); ?>                                               
-						</div>
+						
 					<?php endif; ?>
                     <div class="clear"></div>
 					<?php

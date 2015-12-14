@@ -185,7 +185,7 @@ class KopaLayout {
             $current_class = 'current-page';
             $prefix = '&nbsp;/&nbsp;';
             $breadcrumb_before = '<div id="breadcrumbs" class="breadcrumb clearfix">';
-            $breadcrumb_before.= sprintf('<span>%s</span>', __('You are here: ', kopa_get_domain()));
+            $breadcrumb_before.= sprintf('<span>%s</span>', __('', kopa_get_domain()));
             $breadcrumb_after = '</div>';
 
             $breadcrumb_home = '<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . home_url() . '" itemprop="url"><span itemprop="title"></span>' . __('Home', kopa_get_domain()) . '</span></a></span>';

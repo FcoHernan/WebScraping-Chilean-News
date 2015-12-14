@@ -1,6 +1,7 @@
 var request = require('request');
 var cheerio = require('cheerio');
-var mysql 	= require('mysql');
+var mysql 	= require('mysql');;                                               
+var iconv 	= require('iconv');    
 
 //Conexión con base de datos
 var pool  = mysql.createPool({
@@ -30,9 +31,10 @@ pool.getConnection(function(err, connection) {
 				//console.log(ahora);
 
 				switch (option){
+			/*	
 					case 1: // EMOL Nacional
 						var link = JSON.parse(JSON.stringify(rows[0]["siteCat"]));
-						request({url: link, encoding: 'utf8'}, function(err, resp, body){
+						request({url: link, chatset: 'utf-8'}, function(err, resp, body){
 							if(!err && resp.statusCode == 200){
 								var $ = cheerio.load(body);
 								
@@ -71,7 +73,7 @@ pool.getConnection(function(err, connection) {
 										}
 									});
 								}
-								else{ console.log("no se guarda en opcion: "+option);}
+								else{ console.log("no se guarda en EMOL Nacional");}
 							}
 							else{
 								console.log("Error de extracción");
@@ -108,7 +110,7 @@ pool.getConnection(function(err, connection) {
 										var valor = parseInt(JSON.parse(JSON.stringify(rows[0]["maximo"])))+1;
 										var queryInsert="INSERT INTO `wp_posts`(`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES ";
 										for (var j = 0; j < titulo.length; j++) {
-											var newQueryInsert = queryInsert + "("+2+",'"+ahora+"', '"+ahora+"' , '"+descripcion[j]+"' , '"+titulo[j]+"' ,'','publish','open','open','','prueba1','','', '"+ahora+"' , '"+ahora+"' ,'',"+0+",'http://localhost/?p="+(valor)+"',"+0+",'post','',"+0+")";
+											var newQueryInsert = queryInsert + "("+1+",'"+ahora+"', '"+ahora+"' , '"+descripcion[j]+"' , '"+titulo[j]+"' ,'','publish','open','open','','prueba1','','', '"+ahora+"' , '"+ahora+"' ,'',"+0+",'http://localhost/?p="+(valor)+"',"+0+",'post','',"+0+")";
 											valor++;
 		  									connection.query(newQueryInsert  , function(err, results){
 												if(err) throw err;
@@ -120,7 +122,7 @@ pool.getConnection(function(err, connection) {
 										}
 									});
 								}
-								else{ console.log("no se guarda en opcion: "+option);}
+								else{ console.log("no se guarda en EMOL Internacional");}
 							}
 							else{
 								console.log("Error de extracción");
@@ -169,7 +171,7 @@ pool.getConnection(function(err, connection) {
 										}
 									});
 								}
-								else{ console.log("no se guarda en opcion: "+option);}
+								else{ console.log("no se guarda en EMOL Tecnología");}
 							}
 							else{
 								console.log("Error de extracción");
@@ -218,7 +220,7 @@ pool.getConnection(function(err, connection) {
 										}
 									});
 								}
-								else{ console.log("no se guarda en opcion: "+option);}
+								else{ console.log("no se guarda en EMOL Educación");}
 							}
 							else{
 								console.log("Error de extracción");
@@ -267,7 +269,7 @@ pool.getConnection(function(err, connection) {
 										}
 									});
 								}
-								else{ console.log("no se guarda en opcion: "+option);}
+								else{ console.log("no se guarda en EMOL Economía");}
 							}
 							else{
 								console.log("Error de extracción");
@@ -316,7 +318,7 @@ pool.getConnection(function(err, connection) {
 										}
 									});
 								}
-								else{ console.log("no se guarda en opcion: "+option);}
+								else{ console.log("no se guarda en EMOL Deporte");}
 							}
 							else{
 								console.log("Error de extracción");
@@ -365,7 +367,7 @@ pool.getConnection(function(err, connection) {
 										}
 									});
 								}
-								else{ console.log("no se guarda en opcion: "+option);}
+								else{ console.log("no se guarda en EMOL Multimedia");}
 							}
 							else{
 								console.log("Error de extracción");
@@ -382,18 +384,20 @@ pool.getConnection(function(err, connection) {
 								//Titulares
 								var i = 0;
 								var titulo = new Array();
-								$('.dest_ten_cent h2 a').each(function(){
+								$('.cont_378_e_2015 .dest_ten_cent h2 a').each(function(){
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log(titulo);
 
 								//Descripción
 								var i = 0;
 								var descripcion = new Array();
-								$('.dest_ten_cent p').each(function(){
-									descripcion[i] = $(this).html().toString().slice(50);
+								$('.cont_378_e_2015 .dest_ten_cent p').each(function(){
+									descripcion[i] = $(this).html().toString();
 									i++;
 									});
+								console.log(descripcion);
 
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -408,10 +412,74 @@ pool.getConnection(function(err, connection) {
 											//console.log(newQueryInsert);
 		  									connection.query(newQueryInsert  , function(err, results){
 												if(err) throw err;
-												var queryInsertCategories = "INSERT INTO `wp_term_relationships`(`object_id`, `term_taxonomy_id`, `term_order`) VALUES ("+results.insertId+"," + 6 + "," + 0 + ")";
+												var queryInsertCategories = "INSERT INTO `wp_term_relationships`(`object_id`, `term_taxonomy_id`, `term_order`) VALUES ("+results.insertId+"," + 8 + "," + 0 + ")";
 												connection.query(queryInsertCategories  , function(err, results){
 													if(err) throw err;
 													//console.log(results);
+												});
+											});
+										}
+									});
+								}
+								else{ 
+									console.log("no se guarda en EMOL Tendencias");}
+							}
+							else{
+								console.log("Error de extracción");
+							}
+						});
+						break;
+		*/
+					case 9: // LA TERCERA Nacional
+						var link = JSON.parse(JSON.stringify(rows[8]["siteCat"]));
+						request({url: link, decoding: null}, function(err, resp, body){
+							if(!err && resp.statusCode == 200){ 
+
+								var $ = cheerio.load(body);
+								console.log(body);
+								//Titulares
+								var i = 0;
+								var titulo = new Array();
+								$('.col13of31inside13 .notatipo h2 a').each(function(){
+									titulo[i] = $(this).html().toString().replace('&#xFFFD;','');
+									titulo[i] = titulo[i].replace('&#xFFFD;','');
+									titulo[i] = titulo[i].replace('&#xFFFD;','');
+									titulo[i] = titulo[i].replace('&#xFFFD;','');
+									titulo[i] = titulo[i].replace('&#xFFFD;','');
+									titulo[i] = titulo[i].replace('&#xFFFD;','');
+									i++;
+									});
+								console.log(titulo);
+
+								//Descripción
+								var i = 0;
+								var descripcion = new Array();
+								$('.col13of31inside13 .notatipo p').each(function(){
+									descripcion[i] = $(this).html().toString().slice(2);
+									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
+									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
+									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
+									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
+									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
+									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
+									i++;
+									});
+								console.log(descripcion);
+								
+								if (titulo.length == descripcion.length) {
+									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
+									connection.query( queryCountNews, function(err, rows) {
+										if (err) throw err;
+										var valor = parseInt(JSON.parse(JSON.stringify(rows[0]["maximo"])))+1;
+										var queryInsert="INSERT INTO `wp_posts`(`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES ";
+										for (var j = 0; j < titulo.length; j++) {
+											var newQueryInsert = queryInsert + "("+2+",'"+ahora+"', '"+ahora+"' , '"+descripcion[j].replace('&#xFFFD;',' ')+"' , '"+titulo[j].replace('&#xFFFD;',' ')+"' ,'','publish','open','open','','prueba1','','', '"+ahora+"' , '"+ahora+"' ,'',"+0+",'http://localhost/?p="+(valor)+"',"+0+",'post','',"+0+")";
+											valor++;
+		  									connection.query(newQueryInsert  , function(err, results){
+												if(err) throw err;
+												var queryInsertCategories = "INSERT INTO `wp_term_relationships`(`object_id`, `term_taxonomy_id`, `term_order`) VALUES ("+results.insertId+"," + 1 + "," + 0 + ")";
+												connection.query(queryInsertCategories  , function(err, results){
+													if(err) throw err;
 												});
 											});
 										}
@@ -423,9 +491,6 @@ pool.getConnection(function(err, connection) {
 								console.log("Error de extracción");
 							}
 						});
-						break;
-
-					case 9: // LA TERCERA Nacional
 						break;
 
 					case 10: // LA TERCERA Internacional
@@ -445,25 +510,179 @@ pool.getConnection(function(err, connection) {
 
 					case 15: // LA TERCERA Economía
 						break;
-
+/*
 					case 16: // LA CUARTA Internacional
+						var link = JSON.parse(JSON.stringify(rows[15]["siteCat"]));
+						request({url: link, decoding: null}, function(err, resp, body){
+							if(!err && resp.statusCode == 200){
+								var ic = new iconv.Iconv('iso-8859-1', 'utf-8');                              
+								var buf = ic.convert(body);                                                   
+								var utf8String = buf.toString('utf-8'); 
+
+								var $ = cheerio.load(utf8String);
+								
+								//Titulares
+								var i = 0;
+								var titulo = new Array();
+								$('.trecientos_canal .L4ta_canalGene h3 a').each(function(){
+									titulo[i] = $(this).html().toString();
+									i++;
+									});
+								//console.log(titulo);
+
+								//Descripción
+								var i = 0;
+								var descripcion = new Array();
+								$('.trecientos_canal .L4ta_canalGene p').each(function(){
+									descripcion[i] = $(this).html().toString();
+									i++;
+									});
+								//console.log(descripcion);
+								
+								if (titulo.length == descripcion.length) {
+									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
+									connection.query( queryCountNews, function(err, rows) {
+										if (err) throw err;
+										var valor = parseInt(JSON.parse(JSON.stringify(rows[0]["maximo"])))+1;
+										var queryInsert="INSERT INTO `wp_posts`(`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES ";
+										for (var j = 0; j < titulo.length; j++) {
+											var newQueryInsert = queryInsert + "("+4+",'"+ahora+"', '"+ahora+"' , '"+descripcion[j]+"' , '"+titulo[j]+"' ,'','publish','open','open','','prueba1','','', '"+ahora+"' , '"+ahora+"' ,'',"+0+",'http://localhost/?p="+(valor)+"',"+0+",'post','',"+0+")";
+											valor++;
+		  									connection.query(newQueryInsert  , function(err, results){
+												if(err) throw err;
+												var queryInsertCategories = "INSERT INTO `wp_term_relationships`(`object_id`, `term_taxonomy_id`, `term_order`) VALUES ("+results.insertId+"," + 1 + "," + 0 + ")";
+												connection.query(queryInsertCategories  , function(err, results){
+													if(err) throw err;
+												});
+											});
+										}
+									});
+								}
+								else{ console.log("no se guarda en opcion: "+option);}
+							}
+							else{
+								console.log("Error de extracción");
+							}
+						});
 						break;
 
 					case 17: // LA CUARTA Deporte
+						var link = JSON.parse(JSON.stringify(rows[16]["siteCat"]));
+						request({url: link, encoding: null}, function(err, resp, body){
+							if(!err && resp.statusCode == 200){
+								var ic = new iconv.Iconv('iso-8859-1', 'utf-8');                              
+								var buf = ic.convert(body);                                                   
+								var utf8String = buf.toString('utf-8'); 
+
+								var $ = cheerio.load(utf8String);
+								
+								//Titulares
+								var i = 0;
+								var titulo = new Array();
+								$('.trecientos_canal .L4ta_canalGene h3 a').each(function(){
+									titulo[i] = $(this).html().toString();
+									i++;
+									});
+								//console.log(titulo);
+
+								//Descripción
+								var i = 0;
+								var descripcion = new Array();
+								$('.trecientos_canal .L4ta_canalGene p').each(function(){
+									descripcion[i] = $(this).html().toString();
+									i++;
+									});
+								//console.log(descripcion);
+								
+								if (titulo.length == descripcion.length) {
+									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
+									connection.query( queryCountNews, function(err, rows) {
+										if (err) throw err;
+										var valor = parseInt(JSON.parse(JSON.stringify(rows[0]["maximo"])))+1;
+										var queryInsert="INSERT INTO `wp_posts`(`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES ";
+										for (var j = 0; j < titulo.length; j++) {
+											var newQueryInsert = queryInsert + "("+4+",'"+ahora+"', '"+ahora+"' , '"+descripcion[j]+"' , '"+titulo[j]+"' ,'','publish','open','open','','prueba1','','', '"+ahora+"' , '"+ahora+"' ,'',"+0+",'http://localhost/?p="+(valor)+"',"+0+",'post','',"+0+")";
+											valor++;
+		  									connection.query(newQueryInsert  , function(err, results){
+												if(err) throw err;
+												var queryInsertCategories = "INSERT INTO `wp_term_relationships`(`object_id`, `term_taxonomy_id`, `term_order`) VALUES ("+results.insertId+"," + 1 + "," + 0 + ")";
+												connection.query(queryInsertCategories  , function(err, results){
+													if(err) throw err;
+												});
+											});
+										}
+									});
+								}
+								else{ console.log("no se guarda en opcion: "+option);}
+							}
+							else{
+								console.log("Error de extracción");
+							}
+						});
 						break;
 
 					case 18: // LA CUARTA Nacional
-						break;
+						var link = JSON.parse(JSON.stringify(rows[17]["siteCat"]));
+						request({url: link, encoding:null}, function(err, resp, body){
+							if(!err && resp.statusCode == 200){
+								var ic = new iconv.Iconv('iso-8859-1', 'utf-8');                              
+								var buf = ic.convert(body);                                                   
+								var utf8String = buf.toString('utf-8'); 
 
+								var $ = cheerio.load(utf8String);
+								
+								//Titulares
+								var i = 0;
+								var titulo = new Array();
+								$('.trecientos_canal .L4ta_canalGene h3 a').each(function(){
+									titulo[i] = $(this).html().toString();
+									i++;
+									});
+								//console.log(titulo);
+
+								//Descripción
+								var i = 0;
+								var descripcion = new Array();
+								$('.trecientos_canal .L4ta_canalGene p').each(function(){
+									descripcion[i] = $(this).html().toString();
+									i++;
+									});
+								//console.log(descripcion);
+								
+								if (titulo.length == descripcion.length) {
+									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
+									connection.query( queryCountNews, function(err, rows) {
+										if (err) throw err;
+										var valor = parseInt(JSON.parse(JSON.stringify(rows[0]["maximo"])))+1;
+										var queryInsert="INSERT INTO `wp_posts`(`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES ";
+										for (var j = 0; j < titulo.length; j++) {
+											var newQueryInsert = queryInsert + "("+4+",'"+ahora+"', '"+ahora+"' , '"+descripcion[j]+"' , '"+titulo[j]+"' ,'','publish','open','open','','prueba1','','', '"+ahora+"' , '"+ahora+"' ,'',"+0+",'http://localhost/?p="+(valor)+"',"+0+",'post','',"+0+")";
+											valor++;
+		  									connection.query(newQueryInsert  , function(err, results){
+												if(err) throw err;
+												var queryInsertCategories = "INSERT INTO `wp_term_relationships`(`object_id`, `term_taxonomy_id`, `term_order`) VALUES ("+results.insertId+"," + 1 + "," + 0 + ")";
+												connection.query(queryInsertCategories  , function(err, results){
+													if(err) throw err;
+												});
+											});
+										}
+									});
+								}
+								else{ console.log("no se guarda en opcion: "+option);}
+							}
+							else{
+								console.log("Error de extracción");
+							}
+						});
+						break;
+					*/
 					default:
 						//console.log("nueva opcion");
 						break;
 				}
 			}
-		//console.log("b");
 		});
 	});
-	//console.log("a");
 });
-
+//process.exit();
 

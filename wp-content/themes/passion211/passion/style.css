@@ -631,7 +631,7 @@ Header
     color: #555;
 }
 
-/*----- Search box -----*/
+/*----- Search box -----
 .search-box {
     margin-top: 2px;
 }
@@ -654,7 +654,7 @@ Header
     height: 16px;
     width: 16px;
     font-size: 16px;
-}
+}*/
 
 
 /* =========================================================
@@ -2673,7 +2673,7 @@ body.kopa-layout-blog-page .kp-single-slider .flex-prev{
     text-align: right;
 }
 
-/*SEARCH*/
+/*SEARCH
 .widget_search form.search-form{
     position: relative;
 }
@@ -2692,7 +2692,7 @@ body.kopa-layout-blog-page .kp-single-slider .flex-prev{
     right: 2px;
     top: 2px;
     width: 28px;
-}
+}*/
 
 
 /*SOCIALS*/
