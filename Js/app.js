@@ -31,7 +31,7 @@ pool.getConnection(function(err, connection) {
 				//console.log(ahora);
 
 				switch (option){
-			/*	
+			
 					case 1: // EMOL Nacional
 						var link = JSON.parse(JSON.stringify(rows[0]["siteCat"]));
 						request({url: link, chatset: 'utf-8'}, function(err, resp, body){
@@ -429,7 +429,7 @@ pool.getConnection(function(err, connection) {
 							}
 						});
 						break;
-		*/
+		/*
 					case 9: // LA TERCERA Nacional
 						var link = JSON.parse(JSON.stringify(rows[8]["siteCat"]));
 						request({url: link, decoding: null}, function(err, resp, body){
@@ -510,7 +510,7 @@ pool.getConnection(function(err, connection) {
 
 					case 15: // LA TERCERA Economía
 						break;
-/*
+*/					
 					case 16: // LA CUARTA Internacional
 						var link = JSON.parse(JSON.stringify(rows[15]["siteCat"]));
 						request({url: link, decoding: null}, function(err, resp, body){
@@ -675,7 +675,7 @@ pool.getConnection(function(err, connection) {
 							}
 						});
 						break;
-					*/
+					
 					default:
 						//console.log("nueva opcion");
 						break;
