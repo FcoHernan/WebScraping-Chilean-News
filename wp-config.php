@@ -26,7 +26,7 @@ define('DB_NAME', 'WebScrap');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'rsu2015');
+define('DB_PASSWORD', 'diezdiez');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

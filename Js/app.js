@@ -5,10 +5,9 @@ var iconv 	= require('iconv');
 
 //Conexión con base de datos
 var pool  = mysql.createPool({
-  	acquireTimeout : 1000,
 	host            : 'localhost',
 	user            : 'root',
-	password        : 'rsu2015',
+	password        : 'diezdiez',
 	database		: 'WebScrap'
 });
 
@@ -31,7 +30,7 @@ pool.getConnection(function(err, connection) {
 				//console.log(ahora);
 
 				switch (option){
-			
+			/*
 					case 1: // EMOL Nacional
 						var link = JSON.parse(JSON.stringify(rows[0]["siteCat"]));
 						request({url: link, chatset: 'utf-8'}, function(err, resp, body){
@@ -45,6 +44,10 @@ pool.getConnection(function(err, connection) {
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Titulares EMOL Nacional");
+								console.log(titulo);
+								console.log();
 
 								//Descripción
 								var i = 0;
@@ -53,6 +56,10 @@ pool.getConnection(function(err, connection) {
 									descripcion[i] = $(this).html().toString().slice(40);
 									i++;
 									});
+								console.log();
+								console.log("Descripción EMOL Nacional");
+								console.log(descripcion);
+								console.log();
 								
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -94,6 +101,10 @@ pool.getConnection(function(err, connection) {
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Titulares EMOL Internacional");
+								console.log(titulo);
+								console.log();
 
 								//Descripción
 								var i = 0;
@@ -102,6 +113,10 @@ pool.getConnection(function(err, connection) {
 									descripcion[i] = $(this).html().toString().slice(40);
 									i++;
 									});
+								console.log();
+								console.log("Descripción EMOL Internacional");
+								console.log(descripcion);
+								console.log();
 								
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -129,7 +144,7 @@ pool.getConnection(function(err, connection) {
 							}
 						});
 						break;
-						
+					
 					case 3: // EMOL Tecnología
 						var link = JSON.parse(JSON.stringify(rows[2]["siteCat"]));
 						request({url: link, encoding: 'utf8'}, function(err, resp, body){
@@ -143,6 +158,10 @@ pool.getConnection(function(err, connection) {
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Titulares EMOL Tecnología");
+								console.log(titulo);
+								console.log();
 
 								//Descripción
 								var i = 0;
@@ -151,6 +170,10 @@ pool.getConnection(function(err, connection) {
 									descripcion[i] = $(this).html().toString().slice(40);
 									i++;
 									});
+								console.log();
+								console.log("Descripción EMOL Tecnología");
+								console.log(descripcion);
+								console.log();
 								
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -192,6 +215,10 @@ pool.getConnection(function(err, connection) {
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Titulares EMOL Educación");
+								console.log(titulo);
+								console.log();
 
 								//Descripción
 								var i = 0;
@@ -200,6 +227,10 @@ pool.getConnection(function(err, connection) {
 									descripcion[i] = $(this).html().toString().slice(40);
 									i++;
 									});
+								console.log();
+								console.log("Descripción EMOL Educación");
+								console.log(descripcion);
+								console.log();
 								
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -241,6 +272,10 @@ pool.getConnection(function(err, connection) {
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Titulares EMOL Economía");
+								console.log(titulo);
+								console.log();
 
 								//Descripción
 								var i = 0;
@@ -249,6 +284,10 @@ pool.getConnection(function(err, connection) {
 									descripcion[i] = $(this).html().toString().slice(50);
 									i++;
 									});
+								console.log();
+								console.log("Descripción EMOL Economía");
+								console.log(descripcion);
+								console.log();
 								
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -290,6 +329,10 @@ pool.getConnection(function(err, connection) {
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Titulares EMOL Deporte");
+								console.log(titulo);
+								console.log();
 
 								//Descripción
 								var i = 0;
@@ -298,6 +341,10 @@ pool.getConnection(function(err, connection) {
 									descripcion[i] = $(this).html().toString().slice(50);
 									i++;
 									});
+								console.log();
+								console.log("Descripción EMOL Deporte");
+								console.log(descripcion);
+								console.log();
 	
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -339,6 +386,10 @@ pool.getConnection(function(err, connection) {
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Titulares EMOL Multimedia");
+								console.log(titulo);
+								console.log();
 
 								//Descripción
 								var i = 0;
@@ -347,6 +398,10 @@ pool.getConnection(function(err, connection) {
 									descripcion[i] = $(this).html().toString().slice(0,-63);
 									i++;
 									});
+								console.log();
+								console.log("Descripción EMOL Multimedia");
+								console.log(descripcion);
+								console.log();
 								
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -388,7 +443,10 @@ pool.getConnection(function(err, connection) {
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Titulares EMOL Tendencias");
 								console.log(titulo);
+								console.log();
 
 								//Descripción
 								var i = 0;
@@ -397,7 +455,10 @@ pool.getConnection(function(err, connection) {
 									descripcion[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Descripción EMOL Tendencias");
 								console.log(descripcion);
+								console.log();
 
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -429,42 +490,44 @@ pool.getConnection(function(err, connection) {
 							}
 						});
 						break;
-		/*
+		*/
 					case 9: // LA TERCERA Nacional
 						var link = JSON.parse(JSON.stringify(rows[8]["siteCat"]));
-						request({url: link, decoding: null}, function(err, resp, body){
+						request({url: link,encoding: null }, function(err, resp, body){
 							if(!err && resp.statusCode == 200){ 
 
-								var $ = cheerio.load(body);
-								console.log(body);
+								//var $ = iconv.decode(new Buffer(body), "ISO-8859-1"); 
+								//console.log($);
+
+								var ic = new iconv.Iconv('iso-8859-1', 'utf-8');                              
+								var buf = ic.convert(body);                                                   
+								var utf8String = buf.toString('utf-8');  
+								var $ = cheerio.load(utf8String)
+
+
 								//Titulares
 								var i = 0;
 								var titulo = new Array();
 								$('.col13of31inside13 .notatipo h2 a').each(function(){
-									titulo[i] = $(this).html().toString().replace('&#xFFFD;','');
-									titulo[i] = titulo[i].replace('&#xFFFD;','');
-									titulo[i] = titulo[i].replace('&#xFFFD;','');
-									titulo[i] = titulo[i].replace('&#xFFFD;','');
-									titulo[i] = titulo[i].replace('&#xFFFD;','');
-									titulo[i] = titulo[i].replace('&#xFFFD;','');
+									titulo[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Titulares LA TERCERA Nacional");
 								console.log(titulo);
+								console.log();
 
 								//Descripción
 								var i = 0;
 								var descripcion = new Array();
 								$('.col13of31inside13 .notatipo p').each(function(){
-									descripcion[i] = $(this).html().toString().slice(2);
-									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
-									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
-									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
-									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
-									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
-									descripcion[i] = descripcion[i].replace('&#xFFFD;','');
+									descripcion[i] = $(this).html().toString();
 									i++;
 									});
+								console.log();
+								console.log("Descripción LA TERCERA Nacional");
 								console.log(descripcion);
+								console.log();
 								
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -492,7 +555,6 @@ pool.getConnection(function(err, connection) {
 							}
 						});
 						break;
-
 					case 10: // LA TERCERA Internacional
 						break;
 
@@ -510,14 +572,15 @@ pool.getConnection(function(err, connection) {
 
 					case 15: // LA TERCERA Economía
 						break;
-*/					
-					case 16: // LA CUARTA Internacional
+
+			/*		case 16: // LA CUARTA Internacional
 						var link = JSON.parse(JSON.stringify(rows[15]["siteCat"]));
+						console.log(link);
 						request({url: link, decoding: null}, function(err, resp, body){
-							if(!err && resp.statusCode == 200){
+							if(!err && resp.statusCode == 200){                                                   
 								var ic = new iconv.Iconv('iso-8859-1', 'utf-8');                              
 								var buf = ic.convert(body);                                                   
-								var utf8String = buf.toString('utf-8'); 
+								var utf8String = buf.toString('utf-8');  
 
 								var $ = cheerio.load(utf8String);
 								
@@ -528,7 +591,7 @@ pool.getConnection(function(err, connection) {
 									titulo[i] = $(this).html().toString();
 									i++;
 									});
-								//console.log(titulo);
+								console.log(titulo);
 
 								//Descripción
 								var i = 0;
@@ -537,7 +600,7 @@ pool.getConnection(function(err, connection) {
 									descripcion[i] = $(this).html().toString();
 									i++;
 									});
-								//console.log(descripcion);
+								console.log(descripcion);
 								
 								if (titulo.length == descripcion.length) {
 									var queryCountNews='select max(substring(guid,21)) as maximo from wp_posts';
@@ -550,7 +613,7 @@ pool.getConnection(function(err, connection) {
 											valor++;
 		  									connection.query(newQueryInsert  , function(err, results){
 												if(err) throw err;
-												var queryInsertCategories = "INSERT INTO `wp_term_relationships`(`object_id`, `term_taxonomy_id`, `term_order`) VALUES ("+results.insertId+"," + 1 + "," + 0 + ")";
+												var queryInsertCategories = "INSERT INTO `wp_term_relationships`(`object_id`, `term_taxonomy_id`, `term_order`) VALUES ("+results.insertId+"," + 2 + "," + 0 + ")";
 												connection.query(queryInsertCategories  , function(err, results){
 													if(err) throw err;
 												});
@@ -564,8 +627,8 @@ pool.getConnection(function(err, connection) {
 								console.log("Error de extracción");
 							}
 						});
-						break;
-
+						break; */
+/*
 					case 17: // LA CUARTA Deporte
 						var link = JSON.parse(JSON.stringify(rows[16]["siteCat"]));
 						request({url: link, encoding: null}, function(err, resp, body){
@@ -620,7 +683,7 @@ pool.getConnection(function(err, connection) {
 							}
 						});
 						break;
-
+*/  /*
 					case 18: // LA CUARTA Nacional
 						var link = JSON.parse(JSON.stringify(rows[17]["siteCat"]));
 						request({url: link, encoding:null}, function(err, resp, body){
@@ -675,7 +738,7 @@ pool.getConnection(function(err, connection) {
 							}
 						});
 						break;
-					
+				*/	
 					default:
 						//console.log("nueva opcion");
 						break;
